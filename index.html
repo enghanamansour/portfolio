@@ -344,6 +344,7 @@
     .bh-sw button[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--ink); }
     .cf-dl { align-self: center; display: inline-block; line-height: 1.2; padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--wine); background: #fff; color: var(--wine); font-size: .85rem; font-weight: 700; text-decoration: none; cursor: pointer; white-space: nowrap; }
     .cf-dl:hover { background: var(--wine); color: #fff; }
+    .cf-dl[hidden] { display: none; }
     .cf-dl.soon { opacity: .65; border-style: dashed; cursor: default; pointer-events: none; }
     .cf-front { gap: 10px; flex-wrap: wrap; }
     .bh-idea { margin-top: 24px; }
@@ -1074,7 +1075,7 @@
             <span class="cf-d" id="cfD"></span>
             <svg class="cf-seal" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="35" stroke-dasharray="3 4"/><text x="50" y="58" text-anchor="middle" id="cfAb">NV</text></svg>
           </article>
-          <div class="cf-front"><span class="cf-label" data-ar="هناء الشمراني · الشهادات">Hana Al-Shamrani · certificates</span><a class="cf-dl" id="cfDl" target="_blank" rel="noopener"></a><span class="cf-count" data-ar="8 والعدد مستمر">8 &amp; counting</span></div>
+          <div class="cf-front"><span class="cf-label" data-ar="هناء الشمراني · الشهادات">Hana Al-Shamrani · certificates</span><a class="cf-dl" id="cfDl" target="_blank" rel="noopener"></a><a class="cf-dl" id="cfVf" target="_blank" rel="noopener" hidden></a><span class="cf-count" data-ar="8 والعدد مستمر">8 &amp; counting</span></div>
         </div>
       </div>
     </div>
@@ -1694,8 +1695,8 @@
   // ---------- certificates: a tab pulls that certificate out of the folder ----------
   (function () {
     const CERTS = [
-      ['NVIDIA · Deep Learning Institute', "Building RAG Agents with LLMs", 'RAG · LangChain · FastAPI · LLMs', 'Sep 2026', 'NV', 'assets/certs/nvidia-building-rag-agents.pdf'],
-      ['NVIDIA · Deep Learning Institute', "Adding New Knowledge to LLMs", 'Fine-tuning · Vector databases · Prompt engineering · RAG', 'Sep 2026', 'NV', 'assets/certs/nvidia-adding-new-knowledge-to-llms.pdf'],
+      ['NVIDIA · Deep Learning Institute', "Building RAG Agents with LLMs", 'RAG · LangChain · FastAPI · LLMs', 'Sep 2026', 'NV', 'assets/certs/nvidia-building-rag-agents.pdf', 'https://learn.nvidia.com/certificates?id=LgnPOUqgStqBopOcxbEvxw'],
+      ['NVIDIA · Deep Learning Institute', "Adding New Knowledge to LLMs", 'Fine-tuning · Vector databases · Prompt engineering · RAG', 'Sep 2026', 'NV', 'assets/certs/nvidia-adding-new-knowledge-to-llms.pdf', 'https://learn.nvidia.com/certificates?id=CebfjxqWR_e-1PT9kFqqxg'],
       ['NVIDIA · Deep Learning Institute', "Rapid Application Development with LLMs", 'Generative AI · LangChain · NLP · Python', 'Sep 2026', 'NV', null, 'https://learn.nvidia.com/certificates?id=rIzVWKQyTXe8NyE6Gpf1pQ'],
       ['SDAIA Academy', "Modern Data Engineering for AI Systems", 'Kafka · Lakehouse · Data pipelines · Data quality', 'Sep 2026', 'SD', 'assets/certs/sdaia-modern-data-engineering.pdf'],
       ['SDAIA Academy', "Machine Learning Fundamentals", 'Applied ML · Baselines · Data leakage · Model evaluation', 'Oct 2026', 'SD', null, 'https://athkax.sdaia.gov.sa/certificate-verification?type=Event&id=718&certificate=SA26-00208'],
@@ -1707,7 +1708,8 @@
     let cur = 0, timer = 0;
     const LI = 'https://www.linkedin.com/in/hana-alshamrani-855946228/details/certifications/';
     const setDl = i => {
-      const a = $('#cfDl'), f = CERTS[i][5], v = CERTS[i][6]; a.classList.toggle('soon', v === 'pending');
+      const a = $('#cfDl'), vf = $('#cfVf'), f = CERTS[i][5], v = CERTS[i][6]; a.classList.toggle('soon', v === 'pending');
+      if (f && v && v !== 'pending') { vf.hidden = false; vf.href = v; vf.textContent = T('Verify \u2197', '\u062a\u062d\u0642\u0642 \u2197'); } else { vf.hidden = true; vf.removeAttribute('href'); }
       if (f) { a.href = f; a.setAttribute('download', ''); a.textContent = T('Download PDF \u2193', '\u062a\u062d\u0645\u064a\u0644 PDF \u2193'); }
       else if (v === 'pending') { a.removeAttribute('href'); a.removeAttribute('download'); a.textContent = T('Certificate coming soon', '\u0627\u0644\u0634\u0647\u0627\u062f\u0629 \u0642\u0631\u064a\u0628\u0627\u064b'); }
       else if (v) { a.href = v; a.removeAttribute('download'); a.textContent = T('Verify certificate \u2197', '\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0634\u0647\u0627\u062f\u0629 \u2197'); }
