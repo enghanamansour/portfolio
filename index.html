@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hana Al-Shamrani — Computer Engineer</title>
-  <meta name="description" content="Hana Al-Shamrani — Computer Engineer building AI that sees. Projects, sketches, volleyball and the sea.">
-  <meta property="og:title" content="Hana Al-Shamrani — Computer Engineer">
-  <meta property="og:description" content="I build AI that sees — from a submarine on the Red Sea floor to pipelines that watch a patient's vitals.">
+  <title>Hana Al-Shamrani | Computer Engineer</title>
+  <meta name="description" content="Hana Al-Shamrani | Computer Engineer building AI that sees. Projects, sketches, volleyball and the sea.">
+  <meta property="og:title" content="Hana Al-Shamrani | Computer Engineer">
+  <meta property="og:description" content="I build AI that sees, from a submarine on the Red Sea floor to pipelines that watch a patient's vitals.">
   <meta property="og:image" content="https://enghanamansour.github.io/portfolio/og.jpg">
   <meta property="og:url" content="https://enghanamansour.github.io/portfolio/">
   <meta property="og:type" content="website">
@@ -318,6 +318,43 @@
     .pg-row .pack-btn { margin: 0; }
     .pack-btn { margin-top: 22px; background: #2a160c; color: #fde8d0; border-color: #2a160c; }
 
+
+    /* 09 Adheed */
+    .w-adh { background: linear-gradient(180deg, #fff5f6, #fde8ec); }
+    .agp { position: relative; background: #fff; border-radius: 22px; padding: 18px; box-shadow: 0 30px 60px rgba(120, 20, 50, .15); }
+    .agp .synthetic { position: absolute; top: 14px; right: 18px; color: var(--muted); opacity: 1; }
+    .agp-btns { display: flex; gap: 8px; margin-bottom: 12px; }
+    .agp-btns button { padding: 6px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; font-weight: 700; cursor: pointer; color: var(--ink); }
+    .agp-btns button[aria-pressed="true"] { background: var(--wine); border-color: var(--wine); color: #fff; }
+    .agp canvas { display: block; width: 100%; height: 220px; }
+    .agp-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+    .agp-row div { background: var(--paper-2); border-radius: 12px; padding: 10px 12px; }
+    .agp-row small { display: block; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .agp-row b { font: 700 1.6rem/1.1 var(--display); }
+
+    /* 10 by HANA */
+    .w-bh { background: linear-gradient(180deg, #fbcfe8, #fdf0f3); }
+    .bh { display: grid; grid-template-columns: 150px 1fr; gap: 18px; align-items: start; background: #fff; border-radius: 22px; padding: 20px; box-shadow: 0 30px 60px rgba(120, 20, 50, .15); }
+    .bh-face { width: 150px; height: auto; }
+    .bh-pick { display: grid; gap: 12px; }
+    .bh-pick small, .bh-lay > small { display: block; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .bh-sw { display: flex; gap: 8px; }
+    .bh-sw button { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--line); cursor: pointer; }
+    .bh-sw button[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--ink); }
+    .bh-idea { margin-top: 24px; }
+    .bh-idea h3 { font: 700 .78rem var(--sans, inherit); letter-spacing: .12em; text-transform: uppercase; color: var(--wine); margin: 18px 0 6px; }
+    .bh-idea p, .bh-idea li { font-size: .95rem; line-height: 1.55; color: var(--ink-2); }
+    .bh-idea ol { padding-inline-start: 1.2em; display: grid; gap: 6px; }
+    .bh-idea li b { color: var(--ink); }
+    .bh-lay { grid-column: 1 / -1; border-top: 1px dashed var(--line); padding-top: 14px; }
+    .bh-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 4px 0; font-weight: 600; }
+    .seg { display: inline-flex; border-radius: 999px; border: 1.5px solid var(--line); overflow: hidden; }
+    .seg button { padding: 5px 14px; border: 0; background: #fff; cursor: pointer; font-weight: 600; color: var(--ink); }
+    .seg button[aria-pressed="true"] { background: var(--wine); color: #fff; }
+    .bh-verdict { margin-top: 8px; padding: 10px 12px; border-radius: 12px; font-weight: 600; font-size: .92rem; background: #dcfce7; color: #166534; }
+    .bh-verdict.bad { background: #fde8ec; color: var(--red); }
+    @media (max-width: 560px) { .bh { grid-template-columns: 1fr; justify-items: center; } .bh-pick, .bh-lay { width: 100%; } }
+
     /* 07 attrition */
     .w-attr { background: linear-gradient(180deg, #2a0a17, #1a0710); }
     .emp-card { background: #fff5f6; color: var(--ink); border-radius: 22px; padding: 24px; box-shadow: 0 30px 60px rgba(0, 0, 0, .4); }
@@ -507,7 +544,7 @@
     <a class="brand" href="#top">Hana Al-Shamrani</a>
     <nav class="nav-links" aria-label="Sections"><a href="#story" data-ar="القصة">Story</a><a href="#work" data-ar="المشاريع">Work</a><a href="#skills" data-ar="المهارات">Skills</a><a href="#off" data-ar="بعيداً عن الشاشة">Unplugged</a><a href="#journey" data-ar="المسيرة">Journey</a></nav>
     <button class="lang" id="lang" type="button" lang="ar">عربي</button>
-    <button class="snd" id="snd" type="button" aria-pressed="false" title="Turn the site's sound on">♪ <span id="sndTxt">Sound off</span></button>
+    <button class="snd" id="snd" type="button" aria-pressed="true" title="Turn the site's sound off">♪ <span id="sndTxt">Sound on</span></button>
     <a class="hire" href="#contact" data-ar="تواصل معي">Say hi</a>
   </div>
 </header>
@@ -526,9 +563,9 @@
           <g class="pupil" id="pupil"><circle class="pupil" cx="80" cy="52" r="13"/><circle class="glint" cx="85" cy="47" r="4"/></g>
           <path pathLength="1" d="M30 22 L22 8 M60 10 L58 -4 M100 10 L102 -4 M130 22 L138 8"/>
         </svg>
-        <p class="eye-note"><svg class="dd in" viewBox="0 0 60 40" aria-hidden="true"><path pathLength="1" d="M50 36 Q10 34 14 6 M6 14 L14 4 L22 14"/></svg><span data-ar="رسمت هذه العين بنفسي، وهي تلاحق مؤشرك — وهذا بالضبط ما أعلّمه للآلات.">I drew this eye. It's following your cursor — that's what I teach machines to do.</span></p>
+        <p class="eye-note"><svg class="dd in" viewBox="0 0 60 40" aria-hidden="true"><path pathLength="1" d="M50 36 Q10 34 14 6 M6 14 L14 4 L22 14"/></svg><span data-ar="رسمت هذه العين بنفسي، وهي تلاحق مؤشرك، وهذا بالضبط ما أعلّمه للآلات.">I drew this eye. It's following your cursor, that's what I teach machines to do.</span></p>
       </div>
-      <p class="lede" data-ar="أبني &lt;b&gt;ذكاءً اصطناعياً يرى&lt;/b&gt; — من غوّاصة تكتشف المخاطر في قاع البحر الأحمر، إلى أنظمة بيانات تراقب العلامات الحيوية للمريض. وكل شيء أرسمه أولاً.">I build <b>AI that sees</b> — from a submarine that spots hazards on the Red Sea floor to pipelines that watch a patient's vitals. I sketch everything first.</p>
+      <p class="lede" data-ar="أبني &lt;b&gt;ذكاءً اصطناعياً يرى&lt;/b&gt;، من غوّاصة تكتشف المخاطر في قاع البحر الأحمر، إلى أنظمة بيانات تراقب العلامات الحيوية للمريض. وكل شيء أرسمه أولاً.">I build <b>AI that sees</b>, from a submarine that spots hazards on the Red Sea floor to pipelines that watch a patient's vitals. I sketch everything first.</p>
       <div class="cta"><a class="btn solid" href="#work" data-ar="شاهد مشاريعي ↓">See my work ↓</a><a class="btn" href="#contact" data-ar="تواصل معي">Say hi</a></div>
       <ul class="glimpses" aria-label="A few things about me">
         <li data-ar="✎ أرسم في كل هامش">✎ draws in every margin</li><li data-ar="🏐 كرة طائرة">🏐 volleyball</li><li data-ar="🌊 أعشق البحر">🌊 sea person</li><li data-ar="✦ أتأمّل النجوم">✦ stargazer</li><li data-ar="🎮 قيمر">🎮 gamer</li><li data-ar="🖖 بيق بانق ثيوري">🖖 Big Bang Theory</li><li data-ar="🏴‍☠️ ون بيس">🏴‍☠️ One Piece</li><li data-ar="♪ الموسيقى دائماً">♪ music, always</li>
@@ -558,11 +595,11 @@
       <div class="map-text rv">
         <small class="kick" data-ar="حيث بدأت الحكاية">where it all happened</small>
         <h2 data-ar="الطائف، جدة&lt;br&gt;والرياض.">Taif, Jeddah<br>&amp; Riyadh.</h2>
-        <p class="lead2" data-ar="انزل بالصفحة — والطائرة الورقية تطير في الطريق الذي سلكته.">Scroll — the little plane flies the route I took.</p>
+        <p class="lead2" data-ar="انزل بالصفحة، والطائرة الورقية تطير في الطريق الذي سلكته.">Scroll, the little plane flies the route I took.</p>
         <ol class="chap">
-          <li><span class="cn">1</span><div><b data-ar="الطائف">Taif</b><p data-ar="بكالوريوس هندسة الحاسب من جامعة الطائف — ومشروع تخرجي AquaVenture الحاصل على المركز الأول.">B.Sc. Computer Engineering at Taif University — and AquaVenture, my 1st-place graduation project.</p></div></li>
-          <li><span class="cn">2</span><div><b data-ar="جدة">Jeddah</b><p data-ar="بيتي الثاني — على البحر الأحمر، البحر الذي أحبه والذي صُممت AquaVenture لتحرسه.">My second home — on the Red Sea: the sea I love, and the one AquaVenture was built to watch over.</p></div></li>
-          <li><span class="cn">3</span><div><b data-ar="الرياض">Riyadh</b><p data-ar="أكاديمية طويق والأكاديمية السعودية الرقمية وأكاديمية سدايا — بيانات وذكاء اصطناعي وألعاب، والآن أدوات Meta للذكاء الاصطناعي.">Tuwaiq Academy, the Saudi Digital Academy and SDAIA Academy — data, AI, games and now Meta's AI tools.</p></div></li>
+          <li><span class="cn">1</span><div><b data-ar="الطائف">Taif</b><p data-ar="بكالوريوس هندسة الحاسب من جامعة الطائف، ومشروع تخرجي AquaVenture الحاصل على المركز الأول.">B.Sc. Computer Engineering at Taif University, and AquaVenture, my 1st-place graduation project.</p></div></li>
+          <li><span class="cn">2</span><div><b data-ar="جدة">Jeddah</b><p data-ar="بيتي الثاني، على البحر الأحمر، البحر الذي أحبه والذي صُممت AquaVenture لتحرسه.">My second home, on the Red Sea: the sea I love, and the one AquaVenture was built to watch over.</p></div></li>
+          <li><span class="cn">3</span><div><b data-ar="الرياض">Riyadh</b><p data-ar="أكاديمية طويق والأكاديمية السعودية الرقمية وأكاديمية سدايا، بيانات وذكاء اصطناعي وألعاب، والآن أدوات Meta للذكاء الاصطناعي.">Tuwaiq Academy, the Saudi Digital Academy and SDAIA Academy, data, AI, games and now Meta's AI tools.</p></div></li>
         </ol>
       </div>
     </div>
@@ -590,12 +627,12 @@
         <p class="ed-note" data-ar="↑ يُكتب وحده وأنت تقرأ">↑ it types itself as you read</p>
       </div>
       <ol class="chapters" id="chapters">
-        <li><small>2021</small><h3 data-ar="بدء التشغيل">Booting up</h3><p data-ar="بدأت هندسة الحاسب في جامعة الطائف — دوائر منطقية ومتحكمات دقيقة وأول أسطري بلغة C. كل سطر كود يعمل على سيليكون حقيقي.">Started Computer Engineering at Taif University — logic circuits, microcontrollers and my first lines of C. Every line of code runs on real silicon.</p></li>
-        <li><small data-ar="سنوات الجامعة">University years</small><h3 data-ar="مشاريع الهاردوير">Hardware projects</h3><p data-ar="حساسات ومتحكمات ودوائر تتفاعل مع العالم الحقيقي — مثل نظام أمني بكشف الحركة على Arduino.">Sensors, microcontrollers and circuits that react to the real world — like an Arduino motion-detection security system.</p></li>
+        <li><small>2021</small><h3 data-ar="بدء التشغيل">Booting up</h3><p data-ar="بدأت هندسة الحاسب في جامعة الطائف، دوائر منطقية ومتحكمات دقيقة وأول أسطري بلغة C. كل سطر كود يعمل على سيليكون حقيقي.">Started Computer Engineering at Taif University, logic circuits, microcontrollers and my first lines of C. Every line of code runs on real silicon.</p></li>
+        <li><small data-ar="سنوات الجامعة">University years</small><h3 data-ar="مشاريع الهاردوير">Hardware projects</h3><p data-ar="حساسات ومتحكمات ودوائر تتفاعل مع العالم الحقيقي، مثل نظام أمني بكشف الحركة على Arduino.">Sensors, microcontrollers and circuits that react to the real world, like an Arduino motion-detection security system.</p></li>
         <li><small>2026</small><h3 data-ar="أعلّم الآلات أن ترى">Teaching machines to see</h3><p data-ar="في فريق الذكاء الاصطناعي لـ AquaVenture عملت على نموذج YOLO الذي يمنح غواصتنا بصرها. وفاز بالمركز الأول على مستوى الكلية.">On AquaVenture's AI team I worked on the YOLO model that gives our submarine its vision. It won 1st place college-wide.</p></li>
         <li><small>2026</small><h3 data-ar="منتجات لمستخدمين حقيقيين">Shipping to real users</h3><p data-ar="تدرّبت في رمال X، وبنيت رمال فلو للحجوزات، وموقع TEDxOkadh مع ماسح تذاكر للبوابة.">Interned at Rimal X, built Rimal Flow for bookings, and the TEDxOkadh website with a ticket scanner for the door.</p></li>
-        <li><small>2026</small><h3 data-ar="رفع المستوى">Levelling up</h3><p data-ar="ثلاث شهادات من NVIDIA DLI في النماذج اللغوية وRAG، وهندسة البيانات مع سدايا، ولغة R في طويق — ولعبة على Unity.">Three NVIDIA DLI certificates in LLMs and RAG, SDAIA data engineering, R at Tuwaiq — and a Unity game.</p></li>
-        <li><small data-ar="الآن">Now</small><h3 data-ar="ما زلت أُبنى">Still compiling</h3><p data-ar="في معسكر أكاديمية طويق أتعلم الذكاء الاصطناعي بأدوات Meta — وأبحث عن فرصة يلتقي فيها الهاردوير بالكود.">At Tuwaiq Academy's bootcamp learning AI with Meta's tools — looking for roles where hardware meets code.</p></li>
+        <li><small>2026</small><h3 data-ar="رفع المستوى">Levelling up</h3><p data-ar="ثلاث شهادات من NVIDIA DLI في النماذج اللغوية وRAG، وهندسة البيانات مع سدايا، ولغة R في طويق، ولعبة على Unity.">Three NVIDIA DLI certificates in LLMs and RAG, SDAIA data engineering, R at Tuwaiq, and a Unity game.</p></li>
+        <li><small data-ar="الآن">Now</small><h3 data-ar="ما زلت أُبنى">Still compiling</h3><p data-ar="في معسكر أكاديمية طويق أتعلم الذكاء الاصطناعي بأدوات Meta، وأبحث عن فرصة يلتقي فيها الهاردوير بالكود.">At Tuwaiq Academy's bootcamp learning AI with Meta's tools, looking for roles where hardware meets code.</p></li>
       </ol>
     </div>
   </section>
@@ -603,9 +640,9 @@
   <!-- WORK -->
   <div class="sh wrap" id="work">
     <small data-ar="أشياء بنيتها">things I built</small>
-    <h2 data-ar="ثمانية مشاريع،&lt;br&gt;ثمانية عوالم صغيرة.">Eight projects,<br>eight little worlds.</h2>
+    <h2 data-ar="عشرة مشاريع،&lt;br&gt;عشرة عوالم صغيرة.">Ten projects,<br>ten little worlds.</h2>
     <svg class="uline dd" viewBox="0 0 320 20" aria-hidden="true"><path pathLength="1" d="M4 14 Q80 2 160 12 T316 8"/></svg>
-    <p data-ar="في كل واحد منها شيء تلعب به. جرّب — المس الأشياء.">Every one of them has something you can play with. Go ahead — touch things.</p>
+    <p data-ar="في كل واحد منها شيء تلعب به. جرّب، المس الأشياء.">Every one of them has something you can play with. Go ahead, touch things.</p>
   </div>
 
   <!-- 01 AquaVenture -->
@@ -623,7 +660,7 @@
         <h2>AquaVenture</h2>
         <p class="w-sub" data-ar="غواصة ذاتية القيادة تستخدم الذكاء الاصطناعي والرؤية الحاسوبية لحراسة قاع البحر الأحمر.">An autonomous submarine that uses AI and computer vision to watch over the Red Sea floor.</p>
         <dl class="w-facts">
-          <div><dt data-ar="دوري">My role</dt><dd data-ar="فريق الذكاء الاصطناعي — نموذج YOLO لكشف الأجسام الذي يمنح الغواصة بصرها.">AI team — the YOLO object-detection model that gives the vehicle its vision.</dd></div>
+          <div><dt data-ar="دوري">My role</dt><dd data-ar="فريق الذكاء الاصطناعي، نموذج YOLO لكشف الأجسام الذي يمنح الغواصة بصرها.">AI team, the YOLO object-detection model that gives the vehicle its vision.</dd></div>
           <div><dt data-ar="النتيجة">Result</dt><dd data-ar="المركز الأول بين جميع مشاريع التخرج في الكلية، جامعة الطائف.">1st place among all graduation projects in the college, Taif University.</dd></div>
         </dl>
         <div class="w-tags"><span>YOLO</span><span>Computer Vision</span><span>Deep Learning</span><span>Python</span><span data-ar="أنظمة مدمجة">Embedded</span></div>
@@ -631,7 +668,7 @@
       </div>
       <div class="rv">
         <div class="toy" id="seaToy"><canvas aria-label="Interactive: move a flashlight through dark water and the model detects what it sees"></canvas><span class="sea-count" id="seaCount">detections: 0</span></div>
-        <p class="toy-hint" data-ar="✎ حرّك الضوء — وسأكتشف ما في الأعماق">✎ move your light — I'll detect what's down there</p>
+        <p class="toy-hint" data-ar="✎ حرّك الضوء، وسأكتشف ما في الأعماق">✎ move your light, I'll detect what's down there</p>
       </div>
     </div>
   </section>
@@ -642,7 +679,7 @@
       <div class="press-head rv">
         <h2 class="extra" data-ar="عاجل!&lt;br&gt;عاجل!">Extra!<br>Extra!</h2>
         <p class="kick" data-ar="اقرأ التفاصيل ←">read all about it →</p>
-        <p class="press-copy" data-ar="غطّت جريدة المدينة فوزنا بالمركز الأول، ووصفت AquaVenture بأنها غواصة ذكية صُممت لحراسة قاع البحر الأحمر — واسمي بين أعضاء الفريق.">Al-Madina newspaper covered our 1st-place win, describing AquaVenture as a smart submarine built to watch over the Red Sea floor — with my name among the team.</p>
+        <p class="press-copy" data-ar="غطّت جريدة المدينة فوزنا بالمركز الأول، ووصفت AquaVenture بأنها غواصة ذكية صُممت لحراسة قاع البحر الأحمر، واسمي بين أعضاء الفريق.">Al-Madina newspaper covered our 1st-place win, describing AquaVenture as a smart submarine built to watch over the Red Sea floor, with my name among the team.</p>
         <blockquote data-ar="«طالبات سعوديات يبتكرن غواصة ذكية لرصد بيئة البحر الأحمر»">“Saudi female students invent a ‘smart submarine’ to monitor the Red Sea environment.”</blockquote>
         <button class="btn solid" type="button" data-img="assets/press-almadina-page.jpg" data-ar="اقرأها بالعدسة المكبّرة 🔍">Read it with a magnifier 🔍</button>
       </div>
@@ -663,7 +700,7 @@
       <div class="w-text rv">
         <div class="w-top"><span class="w-no">02</span><span data-ar="لعبة · Unity 6 · الأكاديمية السعودية الرقمية">Game · Unity 6 · Saudi Digital Academy</span></div>
         <h2>The Last Among Metals</h2>
-        <p class="w-sub" data-ar="لعبة بقاء ثنائية الأبعاد بفن البكسل وهوية نيون متقطعة — آخر ناجٍ في عالم من المعدن.">A 2D pixel-art survival game with a neon-glitch identity — one last survivor in a world of metal.</p>
+        <p class="w-sub" data-ar="لعبة بقاء ثنائية الأبعاد بفن البكسل وهوية نيون متقطعة، آخر ناجٍ في عالم من المعدن.">A 2D pixel-art survival game with a neon-glitch identity, one last survivor in a world of metal.</p>
         <dl class="w-facts">
           <div><dt data-ar="ما قمت به">I did</dt><dd data-ar="برمجت اللعب في Unity بلغة C#، وصممت العالم والشخصيات وهوية النيون.">Programmed the gameplay in Unity with C#, and designed the world, characters and neon-glitch look.</dd></div>
           <div><dt data-ar="عُرضت في">Shown at</dt><dd data-ar="معرض مشاريع الأكاديمية السعودية الرقمية.">The Saudi Digital Academy project exhibition.</dd></div>
@@ -672,7 +709,7 @@
       </div>
       <div class="rv">
         <div class="toy" id="runToy" tabindex="0"><canvas aria-label="Mini game: tap or press space to jump over metal"></canvas></div>
-        <p class="toy-hint" data-ar="✎ اضغط أو زر المسافة للقفز — نسخة صغيرة تكريماً لها">✎ tap / space to jump — a tiny tribute version</p>
+        <p class="toy-hint" data-ar="✎ اضغط أو زر المسافة للقفز، نسخة صغيرة تكريماً لها">✎ tap / space to jump, a tiny tribute version</p>
         <div class="game-shots"><img src="assets/game-show-1.jpg" alt="The Last Among Metals at the exhibition" loading="lazy"><img src="assets/game-show-2.jpg" alt="The game's neon-glitch screen" loading="lazy"></div>
       </div>
     </div>
@@ -684,7 +721,7 @@
       <div class="w-text rv">
         <div class="w-top"><span class="w-no">03</span><span data-ar="ويب · TEDxOkadh 2026 · الطائف">Web · TEDxOkadh 2026 · Taif</span></div>
         <h2>TEDxOkadh</h2>
-        <p class="w-sub" data-ar="الموقع الرسمي ونظام دخول البوابة لـ TEDxOkadh 2026 — يومان من المحاضرات في الطائف.">The official website and door-entry system for TEDxOkadh 2026 — two days of talks in Taif.</p>
+        <p class="w-sub" data-ar="الموقع الرسمي ونظام دخول البوابة لـ TEDxOkadh 2026، يومان من المحاضرات في الطائف.">The official website and door-entry system for TEDxOkadh 2026, two days of talks in Taif.</p>
         <dl class="w-facts">
           <div><dt data-ar="بنيت">I built</dt><dd data-ar="الموقع ثنائي اللغة (عربي / إنجليزي) مع العد التنازلي وحجز التذاكر والجدول.">The bilingual site (Arabic / English) with countdown, ticket booking and agenda.</dd></div>
           <div><dt data-ar="عند البوابة">At the door</dt><dd data-ar="ماسح تذاكر يتحقق من كل حاضر.">A ticket scanner that verifies every attendee.</dd></div>
@@ -709,10 +746,10 @@
       <div class="w-text rv">
         <div class="w-top"><span class="w-no">04</span><span data-ar="إدارة الحجوزات · رمال X">Booking management · Rimal X</span></div>
         <h2 data-ar="رمال فلو">Rimal Flow</h2>
-        <p class="w-sub" data-ar="كل مكتب وقاعة ولاونج في رمال X في عرض مباشر واحد — المحجوز، والمتاح الآن، وما سينتهي قريباً.">Every desk, hall and lounge at Rimal X in one live view — what's booked, what's free right now, and what ends soon.</p>
+        <p class="w-sub" data-ar="كل مكتب وقاعة ولاونج في رمال X في عرض مباشر واحد، المحجوز، والمتاح الآن، وما سينتهي قريباً.">Every desk, hall and lounge at Rimal X in one live view, what's booked, what's free right now, and what ends soon.</p>
         <dl class="w-facts">
           <div><dt data-ar="الخريطة">Map</dt><dd data-ar="خريطة تفاعلية للمكان: متاح، أو محجوز، أو ينتهي خلال 30 دقيقة.">An interactive floor map: free, booked, or ending in 30 minutes.</dd></div>
-          <div><dt data-ar="الحجز">Booking</dt><dd data-ar="بالساعة أو اليوم أو الشهر — مع خصومات للطلاب.">By the hour, day or month — with student discounts.</dd></div>
+          <div><dt data-ar="الحجز">Booking</dt><dd data-ar="بالساعة أو اليوم أو الشهر، مع خصومات للطلاب.">By the hour, day or month, with student discounts.</dd></div>
         </dl>
         <div class="w-links"><a href="https://rimal-flow.vercel.app" target="_blank" rel="noopener" data-ar="عرض مباشر ↗">Live demo ↗</a></div>
       </div>
@@ -769,8 +806,8 @@
       <div class="rv packgame">
         <div class="pg-stage"><canvas id="pg" tabindex="0" aria-label="Packing game: move and rotate items as they fall into the carton"></canvas></div>
         <div class="pg-pad" id="pgPad"><button type="button" data-k="left" aria-label="Move left">◀</button><button type="button" data-k="rot" aria-label="Rotate">⟳</button><button type="button" data-k="down" aria-label="Drop">▼</button><button type="button" data-k="right" aria-label="Move right">▶</button></div>
-        <div class="pg-row"><span id="pgStat" data-ar="أنت ضد ذكاء رصّة — غلّف 7 أغراض">You vs Rassah's AI — pack 7 items</span><button class="btn pack-btn" id="pgAI" type="button" data-ar="دع الذكاء يغلّفها">Let the AI pack it</button></div>
-        <p class="toy-hint" data-ar="✎ أنا قيمر — فرصّة صارت لعبة. اضغط على الكرتون، ثم ← → للتحريك و↑ للتدوير">✎ I'm a gamer — so Rassah gets a game. click the box, then ← → to move, ↑ to rotate</p>
+        <div class="pg-row"><span id="pgStat" data-ar="أنت ضد ذكاء رصّة، غلّف 7 أغراض">You vs Rassah's AI, pack 7 items</span><button class="btn pack-btn" id="pgAI" type="button" data-ar="دع الذكاء يغلّفها">Let the AI pack it</button></div>
+        <p class="toy-hint" data-ar="✎ أنا قيمر، فرصّة صارت لعبة. اضغط على الكرتون، ثم ← → للتحريك و↑ للتدوير">✎ I'm a gamer, so Rassah gets a game. click the box, then ← → to move, ↑ to rotate</p>
       </div>
     </div>
   </section>
@@ -783,7 +820,7 @@
         <h2 data-ar="من سيغادر قريباً؟">Who's about to leave?</h2>
         <p class="w-sub" data-ar="مصنِّف لتسرّب الموظفين، مدرَّب على بيانات IBM للموارد البشرية لـ 1,470 موظفاً.">An employee-attrition classifier trained on IBM's HR dataset of 1,470 employees.</p>
         <dl class="w-facts">
-          <div><dt data-ar="النماذج">Models</dt><dd data-ar="الانحدار اللوجستي والغابات العشوائية وXGBoost — وفاز نموذج التصويت المجمّع.">Logistic Regression, Random Forest and XGBoost — a soft-voting ensemble won.</dd></div>
+          <div><dt data-ar="النماذج">Models</dt><dd data-ar="الانحدار اللوجستي والغابات العشوائية وXGBoost، وفاز نموذج التصويت المجمّع.">Logistic Regression, Random Forest and XGBoost, a soft-voting ensemble won.</dd></div>
           <div><dt data-ar="المؤشر">Score</dt><dd data-ar="ROC-AUC بقيمة 0.81 على بيانات الاختبار.">0.81 ROC-AUC on the test set.</dd></div>
           <div><dt data-ar="اكتشفنا">Found</dt><dd data-ar="العمل الإضافي وكثرة السفر هما أقوى الأسباب.">Overtime and frequent travel are the strongest drivers.</dd></div>
         </dl>
@@ -819,6 +856,93 @@
     </div>
   </section>
 
+  <!-- 09 Adheed / SukkarPlus -->
+  <section class="world w-adh" id="adheed">
+    <div class="wrap w-in">
+      <div class="w-text rv">
+        <div class="w-top"><span class="w-no">09</span><span data-ar="بيانات صحية · Python">Healthcare data · Python</span></div>
+        <h2>Adheed · عضيد</h2>
+        <p class="w-sub" data-ar="عضيد (سكر بلس): نظام يحوّل قراءات جهاز الجلوكوز المستمر (CGM) والأنسولين إلى تقرير PDF سريري لكل مريض.">Adheed (SukkarPlus): turns continuous glucose monitor (CGM) and insulin data into a clinical-style PDF report for each patient.</p>
+        <dl class="w-facts">
+          <div><dt data-ar="ينظّف">Clean</dt><dd data-ar="يرتّب قراءات CGM زمنياً، ويعالج القيم الفارغة للأنسولين والكربوهيدرات، ويحذف المكرر.">Sorts CGM readings by time, fills missing insulin and carb entries, and drops duplicates.</dd></div>
+          <div><dt data-ar="يربط">Merge</dt><dd data-ar="يدمج 20 ملف مريض مع نتائج HbA1c المخبرية.">Merges 20 patient profiles with HbA1c lab results.</dd></div>
+          <div><dt data-ar="يُصدر">Report</dt><dd data-ar="تقرير لكل مريض فيه ملف الجلوكوز اليومي (AGP) ومخططات الجلوكوز والأنسولين.">One report per patient with an Ambulatory Glucose Profile (AGP) and daily glucose and insulin charts.</dd></div>
+        </dl>
+        <div class="w-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>FPDF</span></div>
+        <div class="w-links"><a href="https://sukkar-plus.vercel.app" target="_blank" rel="noopener" data-ar="عرض مباشر ↗">Live demo ↗</a><a href="https://github.com/enghanamansour/sukkar_plus" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="rv">
+        <div class="agp">
+          <span class="synthetic" data-ar="منحنى توضيحي">illustrative curve</span>
+          <div class="agp-btns" id="agpBtns" role="group" aria-label="HbA1c profile">
+            <button type="button" data-a="5.6" aria-pressed="true">5.6</button>
+            <button type="button" data-a="6.0" aria-pressed="false">6.0</button>
+            <button type="button" data-a="7.6" aria-pressed="false">7.6</button>
+            <button type="button" data-a="9.2" aria-pressed="false">9.2</button>
+          </div>
+          <canvas id="agpCv" aria-label="Ambulatory glucose profile for the chosen HbA1c"></canvas>
+          <div class="agp-row"><div><small>HbA1c %</small><b id="agpA1c">5.6</b></div><div><small data-ar="متوسط الجلوكوز">Avg glucose</small><b id="agpAvg">114</b></div><div><small data-ar="ضمن النطاق">In range</small><b id="agpTir">100%</b></div></div>
+        </div>
+        <p class="toy-hint" data-ar="✎ اختر مستوى HbA1c وشاهد الملف يتغيّر">✎ pick an HbA1c and watch the profile change</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 BY HANA -->
+  <section class="world w-bh flip" id="byhana">
+    <div class="wrap w-in">
+      <div class="w-text rv">
+        <div class="w-top"><span class="w-no">10</span><span data-ar="منتج ذكاء اصطناعي · Meta Llama">AI product · Meta Llama</span></div>
+        <h2>by HANA</h2>
+        <p class="w-sub" data-ar="خبيرة مكياج ذكية للمرأة في السعودية: «هنو» تصمم إطلالة كاملة حسب بشرتك ومدينتك ومناسبتك وميزانيتك.">A smart makeup artist for women in Saudi Arabia: “Hno” designs a complete look from your skin, city, occasion and budget.</p>
+        <dl class="w-facts">
+          <div><dt data-ar="تصمم">Design</dt><dd data-ar="Llama 3.3 70B يختار الدرجات والمنتجات بترتيب وضعها وطريقة التطبيق.">Llama 3.3 70B picks shades and products in application order, with how to apply each.</dd></div>
+          <div><dt data-ar="ترى">See</dt><dd data-ar="صوّري منتجاتك وتبني هنو الإطلالة حولها (Llama 4 Maverick للرؤية).">Photograph your own products and Hno builds the look around them (Llama 4 Maverick vision).</dd></div>
+          <div><dt data-ar="تحذّر">Warn</dt><dd data-ar="قواعد ثابتة في الكود تنبّه عند تعارض منتجين (مائي مع سيليكون)، فلا يهلوس الذكاء الاصطناعي في السلامة.">Fixed rules in code flag two products that clash (water vs silicone), so the AI never guesses on safety.</dd></div>
+        </dl>
+        <div class="bh-idea">
+          <h3 data-ar="الفكرة">The idea</h3>
+          <p data-ar="نصائح المكياج العامة تتجاهل واقعنا هنا. الجو في جدة غير الرياض، والمناسبة (ميلكة، زواج، عيد، دوام) تغيّر الإطلالة، ومع النقاب كل شيء يتركز على العين ولا بد ألا ينتقل المنتج على القماش، وبعض المنتجات تتعارض ولا يعرف أحد ذلك إلا بعد ما يحصل.">Generic makeup advice ignores what matters here. Jeddah's humidity and Riyadh's dry heat need different products, a milka, a wedding, Eid and the office each call for a different look, a niqab puts everything on the eyes and products must not transfer onto fabric, and some products clash in ways nobody notices until it happens.</p>
+          <h3 data-ar="كيف تعمل">How it works</h3>
+          <ol>
+            <li data-ar="<b>لاما تفكّر.</b> تستلم ملفك (البشرة والمدينة والمناسبة والميزانية) وترجع إطلالة كاملة بصيغة JSON ثابتة الشكل، ويتم التحقق منها قبل عرضها."><b>Llama reasons.</b> It receives your profile (skin, city, occasion, budget) and returns a full look as JSON with a fixed shape, validated before you see it.</li>
+            <li data-ar="<b>الكود يحدد الألوان.</b> النماذج اللغوية لا ترى اللون، فتختار لاما أسماء درجات والكود يحوّلها إلى ألوان مجربة."><b>Code picks the exact colours.</b> Language models can't see colour, so Llama chooses shade names and the code maps each one to a tested colour.</li>
+            <li data-ar="<b>تفهم لهجتك.</b> تكتبين بلهجتك (مويه، يتكتل، روج) ويضيف الكود معنى هذي الكلمات قبل ما تصل لاما."><b>It understands your dialect.</b> You write the way you talk (مويه، يتكتل، روج) and the code adds what those words mean before Llama reads them.</li>
+            <li data-ar="<b>الطقس حقيقي.</b> تُسحب حرارة ورطوبة وUV مدينتك الآن من Open-Meteo وتُبنى عليها نصائح الجو."><b>The weather is live.</b> Your city's current temperature, humidity and UV come from Open-Meteo and shape the climate tips.</li>
+            <li data-ar="<b>السلامة قرار الكود.</b> قواعد ثابتة تفحص تعارض المنتجات، فالتحذير ثابت ولا يهلوس به النموذج."><b>Safety is a code decision.</b> Fixed rules check product clashes, so the warning is consistent and never hallucinated.</li>
+          </ol>
+        </div>
+        <div class="w-tags"><span>Python</span><span>FastAPI</span><span>Llama</span><span>JavaScript</span></div>
+        <div class="w-links"><a href="https://by-hana.vercel.app" target="_blank" rel="noopener" data-ar="عرض مباشر ↗">Live demo ↗</a><a href="https://github.com/enghanamansour/BY-HANA" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="rv">
+        <div class="bh">
+          <svg class="bh-face" viewBox="0 0 200 230" aria-label="Face that changes with the chosen shades">
+            <ellipse cx="100" cy="118" rx="70" ry="92" fill="#f1c9a5"/>
+            <ellipse id="bhBlushL" cx="58" cy="140" rx="17" ry="10" fill="#e11d48" opacity=".25"/>
+            <ellipse id="bhBlushR" cx="142" cy="140" rx="17" ry="10" fill="#e11d48" opacity=".25"/>
+            <ellipse id="bhLidL" cx="68" cy="104" rx="20" ry="9" fill="#9f1239" opacity=".6"/>
+            <ellipse id="bhLidR" cx="132" cy="104" rx="20" ry="9" fill="#9f1239" opacity=".6"/>
+            <path d="M52 100 Q68 90 84 100 M116 100 Q132 90 148 100" stroke="#2a0a17" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M100 112 L94 142 Q100 148 106 142 Z" fill="#e0a982"/>
+            <path id="bhLip" d="M72 168 Q86 158 100 164 Q114 158 128 168 Q100 196 72 168 Z" fill="#9f1239"/>
+          </svg>
+          <div class="bh-pick">
+            <div><small data-ar="الشفاه">Lips</small><span class="bh-sw" id="bhLips"><button type="button" style="background:#9f1239" data-c="#9f1239" aria-label="Wine"></button><button type="button" style="background:#e11d48" data-c="#e11d48" aria-label="Red"></button><button type="button" style="background:#fb7185" data-c="#fb7185" aria-label="Rose"></button><button type="button" style="background:#c98b7b" data-c="#c98b7b" aria-label="Nude"></button></span></div>
+            <div><small data-ar="ظلال العين">Eyes</small><span class="bh-sw" id="bhEyes"><button type="button" style="background:#9f1239" data-c="#9f1239" aria-label="Wine"></button><button type="button" style="background:#7c3aed" data-c="#7c3aed" aria-label="Violet"></button><button type="button" style="background:#b45309" data-c="#b45309" aria-label="Bronze"></button><button type="button" style="background:#0f766e" data-c="#0f766e" aria-label="Teal"></button></span></div>
+          </div>
+          <div class="bh-lay">
+            <small data-ar="هل يتوافق الطبقان؟">Do the two layers get along?</small>
+            <div class="bh-row"><span data-ar="البرايمر">Primer</span><span class="seg" id="bhPrimer"><button type="button" data-b="silicone" aria-pressed="true">silicone</button><button type="button" data-b="water" aria-pressed="false">water</button></span></div>
+            <div class="bh-row"><span data-ar="الفاونديشن">Foundation</span><span class="seg" id="bhFound"><button type="button" data-b="water" aria-pressed="true">water</button><button type="button" data-b="silicone" aria-pressed="false">silicone</button></span></div>
+            <p class="bh-verdict" id="bhVerdict" aria-live="polite"></p>
+          </div>
+        </div>
+        <p class="toy-hint" data-ar="✎ جرّبي الألوان والطبقات" style="color:var(--ink)">✎ try the shades and the layers</p>
+      </div>
+    </div>
+  </section>
+
   <!-- OFF THE CLOCK -->
   <section class="off" id="off">
     <div class="sh wrap">
@@ -830,14 +954,14 @@
       <div class="card span2 rv">
         <span class="tape"></span>
         <h3 data-ar="أحب الرسم ✎">I love drawing ✎</h3>
-        <p data-ar="كل مشروع يبدأ برسمة. اترك لي خربشة — تبقى على شاشتك فقط.">Every project starts as a sketch. Leave me a doodle — it stays on your screen only.</p>
+        <p data-ar="كل مشروع يبدأ برسمة. اترك لي خربشة، تبقى على شاشتك فقط.">Every project starts as a sketch. Leave me a doodle, it stays on your screen only.</p>
         <div class="pad"><canvas id="pad" aria-label="Drawing pad"></canvas></div>
         <div class="tools" id="pens"><button class="pen" type="button" style="background:#9f1239" data-c="#9f1239" aria-pressed="true" aria-label="Wine pen"></button><button class="pen" type="button" style="background:#fb7185" data-c="#fb7185" aria-pressed="false" aria-label="Rose pen"></button><button class="pen" type="button" style="background:#2a0a17" data-c="#2a0a17" aria-pressed="false" aria-label="Ink pen"></button><button class="clear" id="clearPad" type="button" data-ar="مسح">clear</button></div>
       </div>
       <div class="card rv">
         <span class="tape"></span>
         <h3 data-ar="كرة طائرة 🏐">Volleyball 🏐</h3>
-        <p data-ar="رياضتي المفضلة. أبقِ الكرة في الهواء — اضربها قبل أن تسقط.">My favourite sport. Keep the ball up — tap it before it lands.</p>
+        <p data-ar="رياضتي المفضلة. أبقِ الكرة في الهواء، اضربها قبل أن تسقط.">My favourite sport. Keep the ball up, tap it before it lands.</p>
         <div class="court"><canvas id="court" aria-label="Volleyball mini game"></canvas></div>
         <div class="score-row"><span><span data-ar="ضربات:">Bumps:</span> <b id="vb">0</b></span><span><span data-ar="الأفضل:">Best:</span> <b id="vbBest">0</b></span></div>
       </div>
@@ -852,14 +976,14 @@
         <p data-ar="مكاني المفضل على الأرض.">My favourite place on earth.</p>
         <svg class="ship" viewBox="0 0 80 60" aria-hidden="true"><path d="M8 38 L72 38 L62 52 L18 52 Z" fill="#2a0a17"/><path d="M40 6 L40 38" stroke="#2a0a17" stroke-width="3"/><path d="M42 8 Q66 20 42 34 Z" fill="#fff"/><circle cx="52" cy="20" r="4" fill="#2a0a17"/></svg>
         <svg class="waves" viewBox="0 0 400 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q50 10 100 30 T200 30 T300 30 T400 30 T500 30 V200 H0 Z" fill="#fb7185"/><path d="M0 60 Q50 40 100 60 T200 60 T300 60 T400 60 T500 60 V200 H0 Z" fill="#be123c"/></svg>
-        <p class="sea-quote" data-ar="من محبي ون بيس — وما زلت أنتظر من يجد الون بيس. 🏴‍☠️">One Piece fan — still waiting for someone to find the One Piece. 🏴‍☠️</p>
+        <p class="sea-quote" data-ar="من محبي ون بيس، وما زلت أنتظر من يجد الون بيس. 🏴‍☠️">One Piece fan, still waiting for someone to find the One Piece. 🏴‍☠️</p>
       </div>
       <div class="card rv">
         <span class="tape"></span>
         <h3 data-ar="قيمر 🎮">Gamer 🎮</h3>
-        <p data-ar="أوفرواتش وكول أوف ديوتي بعد الدوام. اختبر تصويبك — 10 أهداف بأسرع ما يمكنك.">Overwatch and Call of Duty after hours. Test your aim — 10 targets, as fast as you can.</p>
+        <p data-ar="أوفرواتش وكول أوف ديوتي بعد الدوام. اختبر تصويبك، 10 أهداف بأسرع ما يمكنك.">Overwatch and Call of Duty after hours. Test your aim, 10 targets, as fast as you can.</p>
         <div class="range"><canvas id="aim" aria-label="Aim trainer mini game"></canvas></div>
-        <div class="score-row"><span id="aimStat" data-ar="اضغط للبدء">Click to start</span><span><span data-ar="الأفضل:">Best:</span> <b id="aimBest">—</b></span></div>
+        <div class="score-row"><span id="aimStat" data-ar="اضغط للبدء">Click to start</span><span><span data-ar="الأفضل:">Best:</span> <b id="aimBest">,</b></span></div>
       </div>
       <div class="card span2 sky-card rv">
         <h3 data-ar="عاشقة النجوم ✦">Stargazer ✦</h3>
@@ -881,7 +1005,7 @@
     <div class="sh wrap">
       <small data-ar="المجموعة">the collection</small>
       <h2 data-ar="المهارات، على منصة العرض.">Skills, on the runway.</h2>
-      <p data-ar="عروض الأزياء متعتي الخاصة — لذلك جاءت مهاراتي كمجموعة أزياء. ست إطلالات، ومصممة واحدة.">Fashion shows are my guilty pleasure — so my skills come as a collection. Six looks, one designer.</p>
+      <p data-ar="عروض الأزياء متعتي الخاصة، لذلك جاءت مهاراتي كمجموعة أزياء. ست إطلالات، ومصممة واحدة.">Fashion shows are my guilty pleasure, so my skills come as a collection. Six looks, one designer.</p>
     </div>
     <div class="runway-floor">
       <div class="wrap rail" id="rail">
@@ -906,11 +1030,12 @@
       <div class="rv">
         <h3 data-ar="الخبرة والتعليم">experience &amp; education</h3>
         <ul class="list">
-          <li><small data-ar="الآن">Now</small><div><b data-ar="معسكر أكاديمية طويق — أساسيات الذكاء الاصطناعي بأدوات Meta &lt;span class=&quot;now-tag&quot;&gt;الآن&lt;/span&gt;">Tuwaiq Academy Bootcamp — AI Fundamentals Using Meta Tools <span class="now-tag">NOW</span></b><span data-ar="بناء منتجات ذكاء اصطناعي بأدوات Meta">Building AI products with Meta's tools</span></div></li>
+          <li><small data-ar="الآن">Now</small><div><b data-ar="معسكر أكاديمية طويق، أساسيات الذكاء الاصطناعي بأدوات Meta &lt;span class=&quot;now-tag&quot;&gt;الآن&lt;/span&gt;">Tuwaiq Academy Bootcamp, AI Fundamentals Using Meta Tools <span class="now-tag">NOW</span></b><span data-ar="بناء منتجات ذكاء اصطناعي بأدوات Meta">Building AI products with Meta's tools</span></div></li>
           <li><small data-ar="يونيو – أغسطس 2026">Jun – Aug 2026</small><div><b data-ar="متدربة ذكاء أعمال وتقنية">Business Intelligence &amp; Technical Intern</b><span data-ar="رمال X">Rimal X</span></div></li>
           <li><small>2026</small><div><b data-ar="الأكاديمية السعودية الرقمية">Saudi Digital Academy</b><span data-ar="عرضت لعبة «The Last Among Metals»">Showcased “The Last Among Metals”</span></div></li>
-          <li><small>2026</small><div><b data-ar="أكاديمية طويق — تحليل البيانات بلغة R">Tuwaiq Academy — Data Analysis Using R</b></div></li>
-          <li><small>2026</small><div><b data-ar="سدايا — هندسة البيانات الحديثة لأنظمة الذكاء الاصطناعي">SDAIA — Modern Data Engineering for AI Systems</b></div></li>
+          <li><small>2026</small><div><b data-ar="أكاديمية طويق، تحليل البيانات بلغة R">Tuwaiq Academy, Data Analysis Using R</b></div></li>
+          <li><small>2026</small><div><b data-ar="سدايا، هندسة البيانات الحديثة لأنظمة الذكاء الاصطناعي">SDAIA, Modern Data Engineering for AI Systems</b></div></li>
+          <li><small>2026</small><div><b data-ar="سدايا، أساسيات تعلّم الآلة">SDAIA, Machine Learning Fundamentals</b></div></li>
           <li><small>2021 – 2026</small><div><b data-ar="بكالوريوس هندسة الحاسب">B.Sc. Computer Engineering</b><span data-ar="جامعة الطائف · مشروع التخرج حصل على المركز الأول على مستوى الكلية">Taif University · graduation project won 1st place college-wide</span></div></li>
         </ul>
       </div>
@@ -919,7 +1044,7 @@
     <div class="sh wrap">
       <small data-ar="أتعلم دائماً">always learning</small>
       <h2 data-ar="ملف الشهادات.">The certificate file.</h2>
-      <p data-ar="اختر تبويباً — وتخرج تلك الشهادة من الملف.">Pick a tab — that certificate slides out of the folder.</p>
+      <p data-ar="اختر تبويباً، وتخرج تلك الشهادة من الملف.">Pick a tab, that certificate slides out of the folder.</p>
     </div>
     <div class="wrap">
       <div class="cert-folder rv" id="certs">
@@ -957,14 +1082,14 @@
         </svg></div>
         <p class="doa" data-ar="وظّفوها فوراً">HIRE ON SIGHT</p>
         <p class="wn" data-ar="هناء الشمراني">HANA AL-SHAMRANI</p>
-        <p class="bounty">฿ 1,000,000,000 —</p>
+        <p class="bounty">฿ 1,000,000,000 ,</p>
         <small data-ar="معروفة بتعليم الآلات كيف ترى.&lt;br&gt;شوهدت آخر مرة بين الطائف والرياض.">Known for teaching machines to see.<br>Last seen between Taif and Riyadh.</small>
       </div>
       <div class="rv">
         <h2 data-ar="تواصل معي.">Say hi.</h2>
         <p data-ar="متاحة لفرص الذكاء الاصطناعي وهندسة البرمجيات. وأرد أسرع من إنذار NEWS2.">Open to AI and software engineering roles. I reply faster than a NEWS2 alert.</p>
         <div class="mail"><a href="mailto:hana3hjs@gmail.com">hana3hjs@gmail.com</a><button id="copy" type="button" data-ar="نسخ">Copy</button></div>
-        <div class="socials"><a href="https://www.linkedin.com/in/hana-al-shamrani-855946228" target="_blank" rel="noopener" data-ar="لينكدإن ↗">LinkedIn ↗</a><a href="https://github.com/Enghanamansour" target="_blank" rel="noopener">GitHub ↗</a></div>
+        <div class="socials"><a href="https://www.linkedin.com/in/hana-al-shamrani-855946228" target="_blank" rel="noopener" data-ar="لينكدإن ↗">LinkedIn ↗</a><a href="https://github.com/Enghanamansour" target="_blank" rel="noopener">GitHub ↗</a><a href="assets/Hana_Alshamrani_CV.pdf" target="_blank" rel="noopener" data-ar="السيرة الذاتية ↓">CV ↓</a></div>
         <svg class="sig" id="sig" viewBox="0 0 300 130" aria-hidden="true"><path class="con" pathLength="1" d="M14 20 L14 100 M14 60 L54 60 M54 20 L54 100 M84 100 L108 20 L132 100 M96 64 L120 64 M160 100 L160 20 L210 100 L210 20 M238 100 L262 20 L286 100 M250 64 L274 64"/><circle class="st" cx="14" cy="20" r="3.2" style="--d:0.00s"/><circle class="st" cx="14" cy="100" r="2.2" style="--d:0.13s"/><circle class="st" cx="14" cy="60" r="2.2" style="--d:0.26s"/><circle class="st" cx="54" cy="60" r="3.2" style="--d:0.39s"/><circle class="st" cx="54" cy="20" r="2.2" style="--d:0.52s"/><circle class="st" cx="54" cy="100" r="2.2" style="--d:0.65s"/><circle class="st" cx="84" cy="100" r="3.2" style="--d:0.78s"/><circle class="st" cx="108" cy="20" r="2.2" style="--d:0.91s"/><circle class="st" cx="132" cy="100" r="2.2" style="--d:1.04s"/><circle class="st" cx="96" cy="64" r="3.2" style="--d:1.17s"/><circle class="st" cx="120" cy="64" r="2.2" style="--d:1.30s"/><circle class="st" cx="160" cy="100" r="2.2" style="--d:1.43s"/><circle class="st" cx="160" cy="20" r="3.2" style="--d:1.56s"/><circle class="st" cx="210" cy="100" r="2.2" style="--d:1.69s"/><circle class="st" cx="210" cy="20" r="2.2" style="--d:1.82s"/><circle class="st" cx="238" cy="100" r="3.2" style="--d:1.95s"/><circle class="st" cx="262" cy="20" r="2.2" style="--d:2.08s"/><circle class="st" cx="286" cy="100" r="2.2" style="--d:2.21s"/><circle class="st" cx="250" cy="64" r="3.2" style="--d:2.34s"/><circle class="st" cx="274" cy="64" r="2.2" style="--d:2.47s"/></svg><p class="sig-note" data-ar="اسمي، مكتوب في النجوم ✦">my name, written in the stars ✦</p>
       </div>
     </div>
@@ -1011,11 +1136,13 @@
     new IntersectionObserver(([e]) => { on = e.isIntersecting; cancelAnimationFrame(raf); if (on) raf = requestAnimationFrame(tick); }).observe(el);
   }
 
-  // ---------- sound: off by default, a soft synth when on ----------
-  const snd = { on: false, ctx: null };
+  // ---------- sound: on by default (starts with the first tap), a soft synth; the button turns it off ----------
+  const snd = { on: true, ctx: null };
+  try { if (localStorage.getItem('snd') === 'off') snd.on = false; } catch (e) {}
   function tone(f, dur = .18, type = 'sine', vol = .07, delay = 0) {
     if (!snd.on) return;
     snd.ctx = snd.ctx || new (window.AudioContext || window.webkitAudioContext)();
+    if (snd.ctx.state === 'suspended') snd.ctx.resume();
     const c = snd.ctx, o = c.createOscillator(), g = c.createGain(), t = c.currentTime + delay;
     o.type = type; o.frequency.value = f; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + .01); g.gain.exponentialRampToValueAtTime(.0001, t + dur);
     o.connect(g).connect(c.destination); o.start(t); o.stop(t + dur + .05);
@@ -1024,8 +1151,20 @@
   function playTheme() { THEME.forEach((f, i) => tone(f, .35, 'triangle', .06, i * .17)); }
   $('#snd').addEventListener('click', e => {
     snd.on = !snd.on; e.currentTarget.setAttribute('aria-pressed', snd.on); $('#sndTxt').textContent = snd.on ? T('Sound on', 'الصوت يعمل') : T('Sound off', 'الصوت مطفأ');
+    e.currentTarget.title = snd.on ? T("Turn the site's sound off", 'أطفئي صوت الموقع') : T("Turn the site's sound on", 'شغّلي صوت الموقع');
+    try { localStorage.setItem('snd', snd.on ? 'on' : 'off'); } catch (e) {}
     if (snd.on) [523, 659, 784].forEach((f, i) => tone(f, .5, 'sine', .05, i * .06));
   });
+  // browsers only allow sound after a first tap, so the welcome chime plays on that first tap
+  (function () {
+    if (!snd.on) { $('#snd').setAttribute('aria-pressed', 'false'); $('#sndTxt').textContent = 'Sound off'; $('#snd').title = "Turn the site's sound on"; return; }
+    const first = e => {
+      if (e.target.closest && e.target.closest('#snd')) { removeEventListener('pointerdown', first); removeEventListener('keydown', first); return; }
+      removeEventListener('pointerdown', first); removeEventListener('keydown', first);
+      [523, 659, 784].forEach((f, i) => tone(f, .5, 'sine', .05, i * .06));
+    };
+    addEventListener('pointerdown', first); addEventListener('keydown', first);
+  })();
 
   addEventListener('langchange', () => $('#sndTxt').textContent = snd.on ? T('Sound on', 'الصوت يعمل') : T('Sound off', 'الصوت مطفأ'));
 
@@ -1108,7 +1247,7 @@
   // ---------- story: each chapter types its code into the editor ----------
   (function () {
     const CODE = [
-      ['boot.ino', [[['c', '// 2021 — Taif University']], [['k', 'void '], ['f', 'setup'], ['', '() {']], [['', '  hana.'], ['f', 'begin'], ['', '('], ['s', '"Computer Engineering"'], ['', ');']], [['', '}']]]],
+      ['boot.ino', [[['c', '// 2021, Taif University']], [['k', 'void '], ['f', 'setup'], ['', '() {']], [['', '  hana.'], ['f', 'begin'], ['', '('], ['s', '"Computer Engineering"'], ['', ');']], [['', '}']]]],
       ['sensors.ino', [[['k', 'void '], ['f', 'loop'], ['', '() {']], [['', '  '], ['k', 'if '], ['', '(pir.'], ['f', 'motion'], ['', '()) {']], [['', '    alarm.'], ['f', 'ring'], ['', '();  '], ['c', '// intruder!']], [['', '  }']], [['', '}']]]],
       ['vision.py', [[['k', 'from '], ['', 'ultralytics '], ['k', 'import '], ['', 'YOLO']], [['', '']], [['', 'model = '], ['f', 'YOLO'], ['', '('], ['s', '"aquaventure.pt"'], ['', ')']], [['', 'boxes = '], ['f', 'model'], ['', '(camera.'], ['f', 'frame'], ['', '())']], [['c', '# 1st place, college-wide']]]],
       ['deploy.js', [[['k', 'await '], ['f', 'join'], ['', '('], ['s', '"Rimal X"'], ['', ');']], [['f', 'deploy'], ['', '('], ['s', '"rimal-flow.vercel.app"'], ['', ');']], [['f', 'deploy'], ['', '('], ['s', '"tedxokadh.co"'], ['', ');']]]],
@@ -1261,7 +1400,7 @@
     });
   })();
 
-  // ---------- 06 Rassah: a falling-blocks packing game — you vs the AI ----------
+  // ---------- 06 Rassah: a falling-blocks packing game, you vs the AI ----------
   (function () {
     const cv = $('#pg'), stat = $('#pgStat');
     const COLS = 10, ROWS = 8;  // carton M as a grid
@@ -1278,8 +1417,8 @@
     };
     const empty = () => grid.flat().filter(c => !c).length;
     const gaps = () => { let n = 0; for (let c = 0; c < COLS; c++) { let roof = false; for (let r = 0; r < ROWS; r++) { if (grid[r][c]) roof = true; else if (roof) n++; } } return n; };
-    const finish = ok => { mode = 'over'; stat.textContent = ok ? T(`You packed all 7 · ${gaps()} trapped gap${gaps() === 1 ? '' : 's'} — now let the AI try`, `غلّفت الـ 7 كلها · ${gaps()} فراغات محبوسة — الآن جرّب الذكاء`) : T(`Box full with ${queue.length + 1} item(s) left — try the AI`, `امتلأ الكرتون وبقي ${queue.length + 1} — جرّب الذكاء`); tone(ok ? 880 : 200, .2); };
-    const start = () => { reset(); mode = 'play'; ai = null; stat.textContent = T('Your turn — pack all 7 items', 'دورك — غلّف الأغراض السبعة'); spawn(); cv.focus(); };
+    const finish = ok => { mode = 'over'; stat.textContent = ok ? T(`You packed all 7 · ${gaps()} trapped gap${gaps() === 1 ? '' : 's'}, now let the AI try`, `غلّفت الـ 7 كلها · ${gaps()} فراغات محبوسة, الآن جرّب الذكاء`) : T(`Box full with ${queue.length + 1} item(s) left, try the AI`, `امتلأ الكرتون وبقي ${queue.length + 1}, جرّب الذكاء`); tone(ok ? 880 : 200, .2); };
+    const start = () => { reset(); mode = 'play'; ai = null; stat.textContent = T('Your turn, pack all 7 items', 'دورك, غلّف الأغراض السبعة'); spawn(); cv.focus(); };
     const act = k => {
       if (mode !== 'play') return start();
       if (!cur) return;
@@ -1333,7 +1472,7 @@
       if (cur) { let gy = cur.y; while (fits(cur.x, gy + 1, cur.w, cur.h)) gy++; block({ ...cur, y: gy }, true); block(cur); }
       ctx.fillStyle = '#fde8d0'; ctx.font = '700 13px ui-monospace, Consolas, monospace'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
       ctx.fillText(mode === 'ai' || ai && mode === 'over' ? "RASSAH AI" : 'YOU', 16, 24);
-      ctx.textAlign = 'right'; ctx.fillText(`NEXT: ${queue && queue[0] ? queue[0][0] : '—'}`, w - 16, 24);
+      ctx.textAlign = 'right'; ctx.fillText(`NEXT: ${queue && queue[0] ? queue[0][0] : ','}`, w - 16, 24);
       if (mode === 'idle') { ctx.textAlign = 'center'; ctx.fillStyle = '#fbcfe8'; ctx.font = `700 ${Math.round(h * .07)}px Caveat, cursive`; ctx.fillText(T('click to play', 'اضغط للعب'), w / 2, h / 2); }
     });
   })();
@@ -1348,7 +1487,7 @@
     const upd = () => {
       const z = [...box.querySelectorAll('input:checked')].reduce((a, i) => a + +i.dataset.w, B0), p = 1 / (1 + Math.exp(-z));
       $('#riskPct').textContent = Math.round(p * 100) + '%'; $('#riskBar').style.width = Math.max(4, p * 100) + '%';
-      $('#verdict').textContent = p > .6 ? T('flag for HR — likely to leave', 'نبّهوا الموارد البشرية — غالباً سيغادر') : p > .3 ? T('worth a check-in', 'يستحق جلسة متابعة') : T('probably staying ♡', 'غالباً باقٍ ♡');
+      $('#verdict').textContent = p > .6 ? T('flag for HR, likely to leave', 'نبّهوا الموارد البشرية, غالباً سيغادر') : p > .3 ? T('worth a check-in', 'يستحق جلسة متابعة') : T('probably staying ♡', 'غالباً باقٍ ♡');
     };
     box.addEventListener('change', () => { upd(); tone(600 + Math.random() * 300, .06, 'sine', .04); }); upd();
   })();
@@ -1440,7 +1579,7 @@
       if (a === c) { head = T('Tie. Again?', 'تعادل. مرة ثانية؟'); rule = T(`We both picked ${a}.`, `اخترنا كلانا ${ARN[a]}.`); tone(500, .12); }
       else if (beats[a][c]) { you++; head = T('You win! Bazinga?', 'فزت! بازينقا؟'); rule = say(a, beats[a][c], c); tone(784, .1); tone(1047, .15, 'sine', .07, .1); }
       else { me++; head = T('I win. Bazinga!', 'فزت أنا. بازينقا!'); rule = say(c, beats[c][a], a); tone(330, .2, 'triangle'); }
-      $('#rpsOut').innerHTML = `<b>${icon[a]} vs ${icon[c]} — ${head}</b>${rule}<br>${T('You', 'أنت')}: ${you} · ${T('Me', 'أنا')}: ${me}`;
+      $('#rpsOut').innerHTML = `<b>${icon[a]} vs ${icon[c]}, ${head}</b>${rule}<br>${T('You', 'أنت')}: ${you} · ${T('Me', 'أنا')}: ${me}`;
     });
   })();
 
@@ -1452,7 +1591,7 @@
     const resize = () => g = fit(cv); resize(); new ResizeObserver(() => resize()).observe(cv);
     const finish = () => {
       state = 'done'; tgt = null; const avg = times.length ? Math.round(times.reduce((a, b) => a + b) / times.length) : 0;
-      stat.textContent = T(`${hits}/10 hits · avg ${avg || '—'} ms`, `${hits}/10 إصابات · المتوسط ${avg || '—'} ms`);
+      stat.textContent = T(`${hits}/10 hits · avg ${avg || ','} ms`, `${hits}/10 إصابات · المتوسط ${avg || ','} ms`);
       if (avg && hits >= 7 && (!best || avg < best)) { best = avg; $('#aimBest').textContent = best + ' ms'; try { localStorage.setItem('aimBest', best); } catch (e) {} }
     };
     const spawn = () => { if (n >= 10) return finish(); n++; tgt = { x: 30 + Math.random() * (g.w - 60), y: 30 + Math.random() * (g.h - 60), t: performance.now() }; };
@@ -1568,6 +1707,49 @@
     $('#boxClose').addEventListener('click', () => box.close());
     box.addEventListener('close', () => body.innerHTML = '');
     box.addEventListener('click', e => { if (e.target === box) box.close(); });
+  })();
+
+  // ---------- 09 Adheed: an AGP that follows the HbA1c ----------
+  (function () {
+    const cv = $('#agpCv'), btns = $('#agpBtns'); let a1c = 5.6, g;
+    const SD = { '5.6': 22, '6.0': 28, '7.6': 48, '9.2': 62 };
+    const draw = () => {
+      g = fit(cv); const { ctx, w, h } = g, pad = 28, yMax = 350;
+      const X = hr => pad + (w - pad - 6) * hr / 24, Y = v => h - 20 - (h - 28) * Math.min(v, yMax) / yMax;
+      const avg = a1c * 28.7 - 46.7, sd = SD[a1c.toFixed(1)] || 40;
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = '#e8f5e9'; ctx.fillRect(pad, Y(180), w - pad - 6, Y(70) - Y(180));
+      ctx.setLineDash([4, 4]); ctx.strokeStyle = '#4caf50'; ctx.lineWidth = 1;
+      [70, 180].forEach(v => { ctx.beginPath(); ctx.moveTo(pad, Y(v)); ctx.lineTo(w - 6, Y(v)); ctx.stroke(); }); ctx.setLineDash([]);
+      const med = hr => avg + 15 * Math.sin(hr / 2);
+      const band = (k, col) => { ctx.beginPath(); for (let i = 0; i <= 48; i++) { const hr = i / 2; i ? ctx.lineTo(X(hr), Y(med(hr) + sd * k)) : ctx.moveTo(X(hr), Y(med(hr) + sd * k)); } for (let i = 48; i >= 0; i--) { const hr = i / 2; ctx.lineTo(X(hr), Y(med(hr) - sd * k)); } ctx.closePath(); ctx.fillStyle = col; ctx.fill(); };
+      band(1.2, 'rgba(159, 18, 57, .12)'); band(.5, 'rgba(159, 18, 57, .22)');
+      ctx.beginPath(); for (let i = 0; i <= 48; i++) { const hr = i / 2; i ? ctx.lineTo(X(hr), Y(med(hr))) : ctx.moveTo(X(hr), Y(med(hr))); }
+      ctx.strokeStyle = '#9f1239'; ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.fillStyle = '#8a5a68'; ctx.font = '11px Inter, sans-serif'; ctx.textAlign = 'center';
+      [[0, '12AM'], [6, '6AM'], [12, '12PM'], [18, '6PM'], [24, '12AM']].forEach(([hr, t]) => ctx.fillText(t, Math.min(Math.max(X(hr), pad + 12), w - 14), h - 4));
+      ctx.textAlign = 'right'; [70, 180, 300].forEach(v => ctx.fillText(v, pad - 4, Y(v) + 4));
+      let inr = 0; for (let i = 0; i < 48; i++) { const v = med(i / 2); if (v >= 70 && v <= 180) inr++; }
+      $('#agpA1c').textContent = a1c.toFixed(1); $('#agpAvg').textContent = Math.round(avg); $('#agpTir').textContent = Math.round(inr / 48 * 100) + '%';
+    };
+    btns.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; a1c = parseFloat(b.dataset.a); btns.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); draw(); });
+    draw(); new ResizeObserver(draw).observe(cv);
+  })();
+
+  // ---------- 10 by HANA: shades on a face + the water/silicone rule ----------
+  (function () {
+    const pick = (box, fn) => { const bs = box.querySelectorAll('button'); bs[0].setAttribute('aria-pressed', 'true'); bs.forEach(b => b.addEventListener('click', () => { bs.forEach(x => x.setAttribute('aria-pressed', x === b)); fn(b.dataset.c); })); };
+    pick($('#bhLips'), c => $('#bhLip').setAttribute('fill', c));
+    pick($('#bhEyes'), c => { $('#bhLidL').setAttribute('fill', c); $('#bhLidR').setAttribute('fill', c); });
+    let pr = 'silicone', fo = 'water';
+    const verdict = () => {
+      const bad = pr === 'silicone' && fo === 'water', v = $('#bhVerdict');
+      v.classList.toggle('bad', bad);
+      v.textContent = bad ? T('Clash: water-based foundation over a silicone primer will pill and break apart.', 'تعارض: الفاونديشن المائي فوق برايمر سيليكون يتكتّل ويتقشر.') : T('Good match, these two layer well.', 'توافق جيد, الطبقتان تعملان معاً.');
+    };
+    const seg = (box, set) => box.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { box.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); set(b.dataset.b); verdict(); }));
+    seg($('#bhPrimer'), v => pr = v); seg($('#bhFound'), v => fo = v);
+    addEventListener('langchange', verdict); verdict();
   })();
 
   // ---------- easter egg: type "bazinga" ----------
