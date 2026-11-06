@@ -321,6 +321,7 @@
 
     /* 09 Adheed */
     .w-adh { background: linear-gradient(180deg, #fff5f6, #fde8ec); }
+    .proto { margin-top: 16px; font-size: .88rem; line-height: 1.5; color: var(--ink-2); padding-inline-start: 12px; border-inline-start: 3px solid var(--rose); }
     .agp { position: relative; background: #fff; border-radius: 22px; padding: 18px; box-shadow: 0 30px 60px rgba(120, 20, 50, .15); }
     .agp .synthetic { position: absolute; top: 14px; right: 18px; color: var(--muted); opacity: 1; }
     .agp-btns { display: flex; gap: 8px; margin-bottom: 12px; }
@@ -860,14 +861,16 @@
   <section class="world w-adh" id="adheed">
     <div class="wrap w-in">
       <div class="w-text rv">
-        <div class="w-top"><span class="w-no">09</span><span data-ar="بيانات صحية · Python">Healthcare data · Python</span></div>
+        <div class="w-top"><span class="w-no">09</span><span data-ar="منصة صحية · إضافة لتطبيق صحتي">Health platform · a Sehhaty add-on</span></div>
         <h2>Adheed · عضيد</h2>
-        <p class="w-sub" data-ar="عضيد: نظام يحوّل قراءات جهاز الجلوكوز المستمر (CGM) والأنسولين إلى تقرير PDF سريري لكل مريض.">Adheed turns continuous glucose monitor (CGM) and insulin data into a clinical-style PDF report for each patient.</p>
+        <p class="w-sub" data-ar="منصة تضاف على تطبيق صحتي: تأخذ تقارير مرضى السكري القادمة من المضخة وتحوّلها من أرقام إكلينيكية إلى لغة يفهمها أي مريض.">A platform designed as an add-on to the Sehhaty app. It takes a diabetes patient's pump reports and turns clinical numbers into language anyone can understand.</p>
         <dl class="w-facts">
-          <div><dt data-ar="ينظّف">Clean</dt><dd data-ar="يرتّب قراءات CGM زمنياً، ويعالج القيم الفارغة للأنسولين والكربوهيدرات، ويحذف المكرر.">Sorts CGM readings by time, fills missing insulin and carb entries, and drops duplicates.</dd></div>
-          <div><dt data-ar="يربط">Merge</dt><dd data-ar="يدمج 20 ملف مريض مع نتائج HbA1c المخبرية.">Merges 20 patient profiles with HbA1c lab results.</dd></div>
-          <div><dt data-ar="يُصدر">Report</dt><dd data-ar="تقرير لكل مريض فيه ملف الجلوكوز اليومي (AGP) ومخططات الجلوكوز والأنسولين.">One report per patient with an Ambulatory Glucose Profile (AGP) and daily glucose and insulin charts.</dd></div>
+          <div><dt data-ar="يفسّر">Explain</dt><dd data-ar="بمساعدة الذكاء الاصطناعي يشرح للمريض تقريره بلغة بسيطة ويبني له وش يحتاج يسوي بعده.">With AI, explains the patient's report in simple words and builds the next steps they need to take.</dd></div>
+          <div><dt data-ar="يجهّز">Prepare</dt><dd data-ar="يبني بنك أسئلة يسألها المريض لدكتورته، فيوفّر الوقت على الطرفين ويفهمون بعض.">Builds a question bank the patient can ask their doctor, saving time for both so they understand each other.</dd></div>
+          <div><dt data-ar="يرد">Answer</dt><dd data-ar="شات بوت «سكّرة» يساعد مرضى السكري: يسألون عن أي نظام تغذية ويعطيهم نصائح.">A chatbot, “Sukkara”, that diabetes patients can ask about any nutrition plan and get advice from.</dd></div>
+          <div><dt data-ar="يحفظ">Keep</dt><dd data-ar="كل تقرير سابق محفوظ بالتاريخ والوقت، ليراقب المريض حالته ويوصل الدكتور للملف بسرعة.">Every past report is saved with its date and time, so patients can follow their condition and doctors reach the file fast.</dd></div>
         </dl>
+        <p class="proto" data-ar="النموذج الأولي: بايبلاين بايثون ينظّف بيانات CGM لـ 20 ملف مريض، يربطها بنتائج HbA1c ويصدر تقرير PDF لكل مريض.">The prototype: a Python pipeline that cleans CGM data for 20 patient profiles, links it to HbA1c results and generates a PDF report for each.</p>
         <div class="w-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>FPDF</span></div>
         <div class="w-links"><a href="https://sukkar-plus.vercel.app" target="_blank" rel="noopener" data-ar="عرض مباشر ↗">Live demo ↗</a><a href="https://github.com/enghanamansour/sukkar_plus" target="_blank" rel="noopener">GitHub ↗</a></div>
       </div>
