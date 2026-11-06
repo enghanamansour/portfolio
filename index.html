@@ -412,7 +412,7 @@
     .court canvas { height: 300px; }
     .score-row { display: flex; justify-content: space-between; margin-top: 10px; font-size: .88rem; color: var(--muted); } .score-row b { color: var(--ink); }
     .rps { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .rps button { flex: 1 1 52px; padding: 10px 0; font-size: 1.5rem; border-radius: 12px; border: 1.5px solid var(--line); background: #fff5f6; cursor: pointer; transition: transform .15s; }
+    .rps button { flex: 1 1 52px; padding: 12px 6px; font-size: .9rem; font-weight: 600; color: var(--ink); border-radius: 12px; border: 1.5px solid var(--line); background: #fff5f6; cursor: pointer; transition: transform .15s; }
     .rps button:hover { transform: translateY(-3px); border-color: var(--rose); }
     .rps-out { margin-top: 14px; min-height: 92px; padding: 12px; border-radius: 12px; background: var(--paper-2); font-size: .9rem; }
     .rps-out b { display: block; font: 700 1.4rem var(--hand); color: var(--wine); }
@@ -545,7 +545,7 @@
     <a class="brand" href="#top">Hana Al-Shamrani</a>
     <nav class="nav-links" aria-label="Sections"><a href="#story" data-ar="القصة">Story</a><a href="#work" data-ar="المشاريع">Work</a><a href="#skills" data-ar="المهارات">Skills</a><a href="#off" data-ar="بعيداً عن الشاشة">Unplugged</a><a href="#journey" data-ar="المسيرة">Journey</a></nav>
     <button class="lang" id="lang" type="button" lang="ar">عربي</button>
-    <button class="snd" id="snd" type="button" aria-pressed="true" title="Turn the site's sound off">♪ <span id="sndTxt">Sound on</span></button>
+    <button class="snd" id="snd" type="button" aria-pressed="true" title="Turn the site's sound off"><span id="sndTxt">Sound on</span></button>
     <a class="hire" href="#contact" data-ar="تواصل معي">Say hi</a>
   </div>
 </header>
@@ -569,7 +569,7 @@
       <p class="lede" data-ar="أبني &lt;b&gt;ذكاءً اصطناعياً يرى&lt;/b&gt;، من غوّاصة تكتشف المخاطر في قاع البحر الأحمر، إلى أنظمة بيانات تراقب العلامات الحيوية للمريض. وكل شيء أرسمه أولاً.">I build <b>AI that sees</b>, from a submarine that spots hazards on the Red Sea floor to pipelines that watch a patient's vitals. I sketch everything first.</p>
       <div class="cta"><a class="btn solid" href="#work" data-ar="شاهد مشاريعي ↓">See my work ↓</a><a class="btn" href="#contact" data-ar="تواصل معي">Say hi</a></div>
       <ul class="glimpses" aria-label="A few things about me">
-        <li data-ar="✎ أرسم في كل هامش">✎ draws in every margin</li><li data-ar="🏐 كرة طائرة">🏐 volleyball</li><li data-ar="🌊 أعشق البحر">🌊 sea person</li><li data-ar="✦ أتأمّل النجوم">✦ stargazer</li><li data-ar="🎮 قيمر">🎮 gamer</li><li data-ar="🖖 بيق بانق ثيوري">🖖 Big Bang Theory</li><li data-ar="🏴‍☠️ ون بيس">🏴‍☠️ One Piece</li><li data-ar="♪ الموسيقى دائماً">♪ music, always</li>
+        <li data-ar="أرسم في كل هامش">draws in every margin</li><li data-ar="كرة طائرة">volleyball</li><li data-ar="أعشق البحر">sea person</li><li data-ar="أتأمّل النجوم">stargazer</li><li data-ar="قيمر">gamer</li><li data-ar="بيق بانق ثيوري">Big Bang Theory</li><li data-ar="ون بيس">One Piece</li><li data-ar="الموسيقى دائماً">music, always</li>
       </ul>
     </div>
   </section>
@@ -588,7 +588,7 @@
           <g class="mpin pj" transform="translate(137 330)"><circle r="8"/><path class="ring" d="M-13 2 C-13 -11 12 -13 13 -1 C14 10 -10 14 -12 3"/></g>
           <g class="mpin p2" transform="translate(330 222)"><circle r="9"/><path class="ring" d="M-15 2 C-15 -12 14 -15 15 -1 C16 12 -12 16 -14 3"/></g>
           <text class="mlab" x="176" y="374" data-ar="الطائف">Taif</text><text class="msub" x="176" y="394" data-ar="هنا البداية">where it started</text>
-          <text class="mlab" x="28" y="300" data-ar="جدة">Jeddah</text><text class="msub" x="28" y="320" data-ar="بيتي الثاني ♡">my second home ♡</text>
+          <text class="mlab" x="28" y="300" data-ar="جدة">Jeddah</text><text class="msub" x="28" y="320" data-ar="بيتي الثاني">my second home</text>
           <text class="mlab" x="348" y="214" data-ar="الرياض">Riyadh</text><text class="msub" x="348" y="234" data-ar="هنا تطوّرت">where I levelled up</text>
           <g id="traveler" class="plane"><path d="M10 0 L-8 -7 L-4 0 L-8 7 Z"/></g>
         </svg>
@@ -657,7 +657,7 @@
     </div>
     <div class="wrap w-in">
       <div class="w-text rv">
-        <div class="w-top"><span class="w-no">01</span><span data-ar="مشروع التخرج">Graduation project</span><span class="trophy" data-ar="🏆 المركز الأول">🏆 1st place</span></div>
+        <div class="w-top"><span class="w-no">01</span><span data-ar="مشروع التخرج">Graduation project</span><span class="trophy" data-ar="المركز الأول">1st place</span></div>
         <h2>AquaVenture</h2>
         <p class="w-sub" data-ar="غواصة ذاتية القيادة تستخدم الذكاء الاصطناعي والرؤية الحاسوبية لحراسة قاع البحر الأحمر.">An autonomous submarine that uses AI and computer vision to watch over the Red Sea floor.</p>
         <dl class="w-facts">
@@ -669,7 +669,7 @@
       </div>
       <div class="rv">
         <div class="toy" id="seaToy"><canvas aria-label="Interactive: move a flashlight through dark water and the model detects what it sees"></canvas><span class="sea-count" id="seaCount">detections: 0</span></div>
-        <p class="toy-hint" data-ar="✎ حرّك الضوء، وسأكتشف ما في الأعماق">✎ move your light, I'll detect what's down there</p>
+        <p class="toy-hint" data-ar="حرّك الضوء، وسأكتشف ما في الأعماق">move your light, I'll detect what's down there</p>
       </div>
     </div>
   </section>
@@ -682,14 +682,14 @@
         <p class="kick" data-ar="اقرأ التفاصيل ←">read all about it →</p>
         <p class="press-copy" data-ar="غطّت جريدة المدينة فوزنا بالمركز الأول، ووصفت AquaVenture بأنها غواصة ذكية صُممت لحراسة قاع البحر الأحمر، واسمي بين أعضاء الفريق.">Al-Madina newspaper covered our 1st-place win, describing AquaVenture as a smart submarine built to watch over the Red Sea floor, with my name among the team.</p>
         <blockquote data-ar="«طالبات سعوديات يبتكرن غواصة ذكية لرصد بيئة البحر الأحمر»">“Saudi female students invent a ‘smart submarine’ to monitor the Red Sea environment.”</blockquote>
-        <button class="btn solid" type="button" data-img="assets/press-almadina-page.jpg" data-ar="اقرأها بالعدسة المكبّرة 🔍">Read it with a magnifier 🔍</button>
+        <button class="btn solid" type="button" data-img="assets/press-almadina-page.jpg" data-ar="اقرأها بالعدسة المكبّرة">Read it with a magnifier</button>
       </div>
       <div class="clip-wrap rv">
         <button class="clipping" type="button" data-img="assets/press-almadina-page.jpg" aria-label="Open the full newspaper page">
           <span class="tape t1"></span><span class="tape t2"></span>
           <img src="assets/press-almadina.jpg" alt="Al-Madina newspaper article about the AquaVenture smart submarine">
         </button>
-        <p class="clip-note"><svg class="dd" viewBox="0 0 80 50" aria-hidden="true"><path pathLength="1" d="M74 44 Q30 46 14 10 M6 20 L14 6 L26 16"/></svg><span data-ar="هذولا إحنا!! طلعنا في الجريدة ♡">that's us!! we made the newspaper ♡</span></p>
+        <p class="clip-note"><svg class="dd" viewBox="0 0 80 50" aria-hidden="true"><path pathLength="1" d="M74 44 Q30 46 14 10 M6 20 L14 6 L26 16"/></svg><span data-ar="هذولا إحنا!! طلعنا في الجريدة">that's us!! we made the newspaper</span></p>
       </div>
     </div>
   </section>
@@ -710,7 +710,7 @@
       </div>
       <div class="rv">
         <div class="toy" id="runToy" tabindex="0"><canvas aria-label="Mini game: tap or press space to jump over metal"></canvas></div>
-        <p class="toy-hint" data-ar="✎ اضغط أو زر المسافة للقفز، نسخة صغيرة تكريماً لها">✎ tap / space to jump, a tiny tribute version</p>
+        <p class="toy-hint" data-ar="اضغط أو زر المسافة للقفز، نسخة صغيرة تكريماً لها">tap / space to jump, a tiny tribute version</p>
         <div class="game-shots"><img src="assets/game-show-1.jpg" alt="The Last Among Metals at the exhibition" loading="lazy"><img src="assets/game-show-2.jpg" alt="The game's neon-glitch screen" loading="lazy"></div>
       </div>
     </div>
@@ -734,7 +734,7 @@
           <div class="tk-main"><b>TEDx<i>Okadh</i> 2026</b><p data-ar="تذكرة لشخص واحد · اعرضها عند البوابة">Admit one · show this at the door</p>
             <dl><dt data-ar="اليوم">Day</dt><dt data-ar="التاريخ">Date</dt><dt data-ar="المدينة">City</dt><dd>1</dd><dd data-ar="15 مايو">15 May</dd><dd data-ar="الطائف">Taif</dd></dl></div>
           <div class="tk-qr"><div class="qr" id="qr"></div><span class="scan"></span></div>
-          <div class="stamp"><span data-ar="✓ تم التحقق">✓ VERIFIED</span></div>
+          <div class="stamp"><span data-ar="تم التحقق">VERIFIED</span></div>
         </div>
         <button class="btn scan-btn" id="scanBtn" type="button" data-ar="امسح التذكرة عند البوابة">Scan at the door</button>
       </div>
@@ -759,7 +759,7 @@
           <div class="floor" id="floor"></div>
           <div class="toast" id="toast"></div>
         </div>
-        <p class="toy-hint" data-ar="✎ احجز غرفة متاحة">✎ book a free room</p>
+        <p class="toy-hint" data-ar="احجز غرفة متاحة">book a free room</p>
       </div>
     </div>
   </section>
@@ -785,7 +785,7 @@
           <div class="vit"><div><small data-ar="النبض">Heart rate</small><b id="vHr">72</b></div><div><small data-ar="الأكسجين %">SpO₂ %</small><b id="vSp">98</b></div><div><small data-ar="التنفس / دقيقة">Resp / min</small><b id="vRr">14</b></div><div class="news" id="vNewsBox"><small>NEWS2</small><b id="vNews">0</b></div></div>
           <button class="hold" id="hold" type="button" data-ar="اضغط باستمرار لترفع توتر المريض">Press &amp; hold to stress the patient</button>
         </div>
-        <p class="toy-hint" style="color:var(--ink)" data-ar="✎ راقب مؤشر الإنذار وهو يرتفع">✎ watch the early-warning score climb</p>
+        <p class="toy-hint" style="color:var(--ink)" data-ar="راقب مؤشر الإنذار وهو يرتفع">watch the early-warning score climb</p>
       </div>
     </div>
   </section>
@@ -808,7 +808,7 @@
         <div class="pg-stage"><canvas id="pg" tabindex="0" aria-label="Packing game: move and rotate items as they fall into the carton"></canvas></div>
         <div class="pg-pad" id="pgPad"><button type="button" data-k="left" aria-label="Move left">◀</button><button type="button" data-k="rot" aria-label="Rotate">⟳</button><button type="button" data-k="down" aria-label="Drop">▼</button><button type="button" data-k="right" aria-label="Move right">▶</button></div>
         <div class="pg-row"><span id="pgStat" data-ar="أنت ضد ذكاء رصّة، غلّف 7 أغراض">You vs Rassah's AI, pack 7 items</span><button class="btn pack-btn" id="pgAI" type="button" data-ar="دع الذكاء يغلّفها">Let the AI pack it</button></div>
-        <p class="toy-hint" data-ar="✎ أنا قيمر، فرصّة صارت لعبة. اضغط على الكرتون، ثم ← → للتحريك و↑ للتدوير">✎ I'm a gamer, so Rassah gets a game. click the box, then ← → to move, ↑ to rotate</p>
+        <p class="toy-hint" data-ar="أنا قيمر، فرصّة صارت لعبة. اضغط على الكرتون، ثم ← → للتحريك و↑ للتدوير">I'm a gamer, so Rassah gets a game. click the box, then ← → to move, ↑ to rotate</p>
       </div>
     </div>
   </section>
@@ -836,7 +836,7 @@
           <p class="verdict" id="verdict"></p>
           <p class="fine" data-ar="توضيحي: أقوى خمسة معاملات في النموذج على خط أساس ثابت.">Illustrative: the model's five strongest log-odds on a fixed baseline.</p>
         </div>
-        <p class="toy-hint" data-ar="✎ بدّل المفاتيح">✎ flip the switches</p>
+        <p class="toy-hint" data-ar="بدّل المفاتيح">flip the switches</p>
       </div>
     </div>
   </section>
@@ -851,8 +851,8 @@
         <div class="w-tags"><span>Arduino</span><span>C/C++</span><span data-ar="حساسات">Sensors</span></div>
       </div>
       <div class="rv">
-        <div class="lab" id="lab"><span class="laser" style="top:32%"></span><span class="laser" style="top:52%"></span><span class="laser" style="top:72%"></span><span class="pir"></span><span class="lab-status"><i></i><span id="labTxt">ARMED</span></span><span class="intruder" id="intruder"></span><span class="lab-msg" data-ar="⚠ تم رصد متسلل">⚠ INTRUSION DETECTED</span></div>
-        <p class="toy-hint" data-ar="✎ حاول التسلل بين أشعة الليزر">✎ try to sneak through the lasers</p>
+        <div class="lab" id="lab"><span class="laser" style="top:32%"></span><span class="laser" style="top:52%"></span><span class="laser" style="top:72%"></span><span class="pir"></span><span class="lab-status"><i></i><span id="labTxt">ARMED</span></span><span class="intruder" id="intruder"></span><span class="lab-msg" data-ar="تم رصد متسلل">INTRUSION DETECTED</span></div>
+        <p class="toy-hint" data-ar="حاول التسلل بين أشعة الليزر">try to sneak through the lasers</p>
       </div>
     </div>
   </section>
@@ -886,7 +886,7 @@
           <canvas id="agpCv" aria-label="Ambulatory glucose profile for the chosen HbA1c"></canvas>
           <div class="agp-row"><div><small>HbA1c %</small><b id="agpA1c">5.6</b></div><div><small data-ar="متوسط الجلوكوز">Avg glucose</small><b id="agpAvg">114</b></div><div><small data-ar="ضمن النطاق">In range</small><b id="agpTir">100%</b></div></div>
         </div>
-        <p class="toy-hint" data-ar="✎ اختر مستوى HbA1c وشاهد الملف يتغيّر">✎ pick an HbA1c and watch the profile change</p>
+        <p class="toy-hint" data-ar="اختر مستوى HbA1c وشاهد الملف يتغيّر">pick an HbA1c and watch the profile change</p>
       </div>
     </div>
   </section>
@@ -941,7 +941,7 @@
             <p class="bh-verdict" id="bhVerdict" aria-live="polite"></p>
           </div>
         </div>
-        <p class="toy-hint" data-ar="✎ جرّبي الألوان والطبقات" style="color:var(--ink)">✎ try the shades and the layers</p>
+        <p class="toy-hint" data-ar="جرّبي الألوان والطبقات" style="color:var(--ink)">try the shades and the layers</p>
       </div>
     </div>
   </section>
@@ -956,14 +956,14 @@
     <div class="wrap desk">
       <div class="card span2 rv">
         <span class="tape"></span>
-        <h3 data-ar="أحب الرسم ✎">I love drawing ✎</h3>
+        <h3 data-ar="أحب الرسم">I love drawing</h3>
         <p data-ar="كل مشروع يبدأ برسمة. اترك لي خربشة، تبقى على شاشتك فقط.">Every project starts as a sketch. Leave me a doodle, it stays on your screen only.</p>
         <div class="pad"><canvas id="pad" aria-label="Drawing pad"></canvas></div>
         <div class="tools" id="pens"><button class="pen" type="button" style="background:#9f1239" data-c="#9f1239" aria-pressed="true" aria-label="Wine pen"></button><button class="pen" type="button" style="background:#fb7185" data-c="#fb7185" aria-pressed="false" aria-label="Rose pen"></button><button class="pen" type="button" style="background:#2a0a17" data-c="#2a0a17" aria-pressed="false" aria-label="Ink pen"></button><button class="clear" id="clearPad" type="button" data-ar="مسح">clear</button></div>
       </div>
       <div class="card rv">
         <span class="tape"></span>
-        <h3 data-ar="كرة طائرة 🏐">Volleyball 🏐</h3>
+        <h3 data-ar="كرة طائرة">Volleyball</h3>
         <p data-ar="رياضتي المفضلة. أبقِ الكرة في الهواء، اضربها قبل أن تسقط.">My favourite sport. Keep the ball up, tap it before it lands.</p>
         <div class="court"><canvas id="court" aria-label="Volleyball mini game"></canvas></div>
         <div class="score-row"><span><span data-ar="ضربات:">Bumps:</span> <b id="vb">0</b></span><span><span data-ar="الأفضل:">Best:</span> <b id="vbBest">0</b></span></div>
@@ -971,31 +971,31 @@
       <div class="card rv">
         <h3 data-ar="حجر · ورقة · مقص · سحلية · سبوك">Rock · Paper · Scissors · Lizard · Spock</h3>
         <p data-ar="من محبي بيق بانق ثيوري. قوانين شيلدون مطبّقة.">Big Bang Theory fan. Sheldon's rules apply.</p>
-        <div class="rps" id="rps"><button type="button" data-m="rock" aria-label="Rock">✊</button><button type="button" data-m="paper" aria-label="Paper">✋</button><button type="button" data-m="scissors" aria-label="Scissors">✌️</button><button type="button" data-m="lizard" aria-label="Lizard">🦎</button><button type="button" data-m="spock" aria-label="Spock">🖖</button></div>
+        <div class="rps" id="rps"><button type="button" data-m="rock" aria-label="Rock" data-ar="حجر">Rock</button><button type="button" data-m="paper" aria-label="Paper" data-ar="ورقة">Paper</button><button type="button" data-m="scissors" aria-label="Scissors" data-ar="مقص">Scissors</button><button type="button" data-m="lizard" aria-label="Lizard" data-ar="سحلية">Lizard</button><button type="button" data-m="spock" aria-label="Spock" data-ar="سبوك">Spock</button></div>
         <div class="rps-out" id="rpsOut" aria-live="polite"><b data-ar="دورك.">Your move.</b><span data-ar="أنت: 0 · أنا: 0">You: 0 · Me: 0</span></div>
       </div>
       <div class="card sea-card rv">
-        <h3 data-ar="البحر 🌊">The sea 🌊</h3>
+        <h3 data-ar="البحر">The sea</h3>
         <p data-ar="مكاني المفضل على الأرض.">My favourite place on earth.</p>
         <svg class="ship" viewBox="0 0 80 60" aria-hidden="true"><path d="M8 38 L72 38 L62 52 L18 52 Z" fill="#2a0a17"/><path d="M40 6 L40 38" stroke="#2a0a17" stroke-width="3"/><path d="M42 8 Q66 20 42 34 Z" fill="#fff"/><circle cx="52" cy="20" r="4" fill="#2a0a17"/></svg>
         <svg class="waves" viewBox="0 0 400 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q50 10 100 30 T200 30 T300 30 T400 30 T500 30 V200 H0 Z" fill="#fb7185"/><path d="M0 60 Q50 40 100 60 T200 60 T300 60 T400 60 T500 60 V200 H0 Z" fill="#be123c"/></svg>
-        <p class="sea-quote" data-ar="من محبي ون بيس، وما زلت أنتظر من يجد الون بيس. 🏴‍☠️">One Piece fan, still waiting for someone to find the One Piece. 🏴‍☠️</p>
+        <p class="sea-quote" data-ar="من محبي ون بيس، وما زلت أنتظر من يجد الون بيس.">One Piece fan, still waiting for someone to find the One Piece.</p>
       </div>
       <div class="card rv">
         <span class="tape"></span>
-        <h3 data-ar="قيمر 🎮">Gamer 🎮</h3>
+        <h3 data-ar="قيمر">Gamer</h3>
         <p data-ar="أوفرواتش وكول أوف ديوتي بعد الدوام. اختبر تصويبك، 10 أهداف بأسرع ما يمكنك.">Overwatch and Call of Duty after hours. Test your aim, 10 targets, as fast as you can.</p>
         <div class="range"><canvas id="aim" aria-label="Aim trainer mini game"></canvas></div>
         <div class="score-row"><span id="aimStat" data-ar="اضغط للبدء">Click to start</span><span><span data-ar="الأفضل:">Best:</span> <b id="aimBest">,</b></span></div>
       </div>
       <div class="card span2 sky-card rv">
-        <h3 data-ar="عاشقة النجوم ✦">Stargazer ✦</h3>
+        <h3 data-ar="عاشقة النجوم">Stargazer</h3>
         <p data-ar="أحب النجوم. المس السماء لترسم كوكبتك الخاصة.">I love the stars. Tap the sky to draw your own constellation.</p>
         <div class="sky"><canvas id="sky" aria-label="Night sky: tap to draw a constellation"></canvas></div>
         <div class="tools"><span class="note" id="skyNote" data-ar="0 نجوم في كوكبتك">0 stars in your constellation</span><button class="clear" id="clearSky" type="button" data-ar="امسح السماء">clear sky</button></div>
       </div>
       <div class="card rv">
-        <h3 data-ar="الموسيقى، دائماً ♪">Music, always ♪</h3>
+        <h3 data-ar="الموسيقى، دائماً">Music, always</h3>
         <p data-ar="دائماً هناك شيء يُعزف وأنا أبرمج. ولهذا الموقع موسيقاه الصغيرة أيضاً.">There's always something playing while I code. This site has a little soundtrack too.</p>
         <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <button class="btn solid music-btn" id="theme" type="button" data-ar="▶ شغّل لحن الموقع">▶ Play the site's theme</button>
@@ -1019,7 +1019,7 @@
         <article class="look rv" style="--c:#fb7185"><span class="look-no" data-ar="إطلالة 05">Look 05</span><h3 data-ar="لغات البرمجة">Languages</h3><p class="made" data-ar="مصنوعة من">made of</p><ul><li>Python</li><li>C/C++</li><li>C#</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>R</li></ul></article>
         <article class="look rv" style="--c:#f9a8d4"><span class="look-no" data-ar="إطلالة 06">Look 06</span><h3 data-ar="الأنظمة الخلفية والأدوات">Back-End &amp; Tools</h3><p class="made" data-ar="مصنوعة من">made of</p><ul><li>FastAPI</li><li>REST APIs</li><li>Git</li><li>Docker</li><li>Linux</li><li>Unity</li><li>Arduino</li><li>Raspberry Pi</li></ul></article>
       </div>
-      <p class="wrap toy-hint" data-ar="✎ مرّر منصة العرض جانبياً ←">✎ scroll the runway sideways →</p>
+      <p class="wrap toy-hint" data-ar="مرّر منصة العرض جانبياً ←">scroll the runway sideways →</p>
     </div>
   </section>
 
@@ -1093,7 +1093,7 @@
         <p data-ar="متاحة لفرص الذكاء الاصطناعي وهندسة البرمجيات. وأرد أسرع من إنذار NEWS2.">Open to AI and software engineering roles. I reply faster than a NEWS2 alert.</p>
         <div class="mail"><a href="mailto:hana3hjs@gmail.com">hana3hjs@gmail.com</a><button id="copy" type="button" data-ar="نسخ">Copy</button></div>
         <div class="socials"><a href="https://www.linkedin.com/in/hana-al-shamrani-855946228" target="_blank" rel="noopener" data-ar="لينكدإن ↗">LinkedIn ↗</a><a href="https://github.com/Enghanamansour" target="_blank" rel="noopener">GitHub ↗</a><a href="assets/Hana_Alshamrani_CV.pdf" target="_blank" rel="noopener" data-ar="السيرة الذاتية ↓">CV ↓</a></div>
-        <svg class="sig" id="sig" viewBox="0 0 300 130" aria-hidden="true"><path class="con" pathLength="1" d="M14 20 L14 100 M14 60 L54 60 M54 20 L54 100 M84 100 L108 20 L132 100 M96 64 L120 64 M160 100 L160 20 L210 100 L210 20 M238 100 L262 20 L286 100 M250 64 L274 64"/><circle class="st" cx="14" cy="20" r="3.2" style="--d:0.00s"/><circle class="st" cx="14" cy="100" r="2.2" style="--d:0.13s"/><circle class="st" cx="14" cy="60" r="2.2" style="--d:0.26s"/><circle class="st" cx="54" cy="60" r="3.2" style="--d:0.39s"/><circle class="st" cx="54" cy="20" r="2.2" style="--d:0.52s"/><circle class="st" cx="54" cy="100" r="2.2" style="--d:0.65s"/><circle class="st" cx="84" cy="100" r="3.2" style="--d:0.78s"/><circle class="st" cx="108" cy="20" r="2.2" style="--d:0.91s"/><circle class="st" cx="132" cy="100" r="2.2" style="--d:1.04s"/><circle class="st" cx="96" cy="64" r="3.2" style="--d:1.17s"/><circle class="st" cx="120" cy="64" r="2.2" style="--d:1.30s"/><circle class="st" cx="160" cy="100" r="2.2" style="--d:1.43s"/><circle class="st" cx="160" cy="20" r="3.2" style="--d:1.56s"/><circle class="st" cx="210" cy="100" r="2.2" style="--d:1.69s"/><circle class="st" cx="210" cy="20" r="2.2" style="--d:1.82s"/><circle class="st" cx="238" cy="100" r="3.2" style="--d:1.95s"/><circle class="st" cx="262" cy="20" r="2.2" style="--d:2.08s"/><circle class="st" cx="286" cy="100" r="2.2" style="--d:2.21s"/><circle class="st" cx="250" cy="64" r="3.2" style="--d:2.34s"/><circle class="st" cx="274" cy="64" r="2.2" style="--d:2.47s"/></svg><p class="sig-note" data-ar="اسمي، مكتوب في النجوم ✦">my name, written in the stars ✦</p>
+        <svg class="sig" id="sig" viewBox="0 0 300 130" aria-hidden="true"><path class="con" pathLength="1" d="M14 20 L14 100 M14 60 L54 60 M54 20 L54 100 M84 100 L108 20 L132 100 M96 64 L120 64 M160 100 L160 20 L210 100 L210 20 M238 100 L262 20 L286 100 M250 64 L274 64"/><circle class="st" cx="14" cy="20" r="3.2" style="--d:0.00s"/><circle class="st" cx="14" cy="100" r="2.2" style="--d:0.13s"/><circle class="st" cx="14" cy="60" r="2.2" style="--d:0.26s"/><circle class="st" cx="54" cy="60" r="3.2" style="--d:0.39s"/><circle class="st" cx="54" cy="20" r="2.2" style="--d:0.52s"/><circle class="st" cx="54" cy="100" r="2.2" style="--d:0.65s"/><circle class="st" cx="84" cy="100" r="3.2" style="--d:0.78s"/><circle class="st" cx="108" cy="20" r="2.2" style="--d:0.91s"/><circle class="st" cx="132" cy="100" r="2.2" style="--d:1.04s"/><circle class="st" cx="96" cy="64" r="3.2" style="--d:1.17s"/><circle class="st" cx="120" cy="64" r="2.2" style="--d:1.30s"/><circle class="st" cx="160" cy="100" r="2.2" style="--d:1.43s"/><circle class="st" cx="160" cy="20" r="3.2" style="--d:1.56s"/><circle class="st" cx="210" cy="100" r="2.2" style="--d:1.69s"/><circle class="st" cx="210" cy="20" r="2.2" style="--d:1.82s"/><circle class="st" cx="238" cy="100" r="3.2" style="--d:1.95s"/><circle class="st" cx="262" cy="20" r="2.2" style="--d:2.08s"/><circle class="st" cx="286" cy="100" r="2.2" style="--d:2.21s"/><circle class="st" cx="250" cy="64" r="3.2" style="--d:2.34s"/><circle class="st" cx="274" cy="64" r="2.2" style="--d:2.47s"/></svg><p class="sig-note" data-ar="اسمي، مكتوب في النجوم">my name, written in the stars</p>
       </div>
     </div>
   </section>
@@ -1193,9 +1193,38 @@
   })();
 
   // ---------- 01 sea: a flashlight and live detections ----------
+
+  // sea toy sprites, drawn as simple shapes
+  function drawObj(ctx, kind, x, y, s) {
+    ctx.save(); ctx.translate(x, y); ctx.lineWidth = Math.max(1.5, s * .06); ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+    const dot = (px, py, r, c) => { ctx.fillStyle = c; ctx.beginPath(); ctx.arc(px, py, r, 0, 6.29); ctx.fill(); };
+    if (kind === 'fish') {
+      ctx.fillStyle = '#f9a8d4'; ctx.beginPath(); ctx.ellipse(-s * .05, 0, s * .38, s * .22, 0, 0, 6.29); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(s * .28, 0); ctx.lineTo(s * .52, -s * .2); ctx.lineTo(s * .52, s * .2); ctx.closePath(); ctx.fill(); dot(-s * .22, -s * .05, s * .04, '#140a22');
+    } else if (kind === 'pufferfish') {
+      ctx.strokeStyle = '#fde68a'; for (let a = 0; a < 6.28; a += .7) { ctx.beginPath(); ctx.moveTo(Math.cos(a) * s * .28, Math.sin(a) * s * .28); ctx.lineTo(Math.cos(a) * s * .4, Math.sin(a) * s * .4); ctx.stroke(); }
+      dot(0, 0, s * .28, '#fde68a'); dot(-s * .1, -s * .06, s * .045, '#140a22');
+    } else if (kind === 'crab') {
+      ctx.strokeStyle = '#fb7185'; [-1, 1].forEach(d => { for (let i = 0; i < 3; i++) { ctx.beginPath(); ctx.moveTo(d * s * .2, s * (.02 + i * .07)); ctx.lineTo(d * s * .42, s * (.14 + i * .08)); ctx.stroke(); } dot(d * s * .36, -s * .2, s * .09, '#fb7185'); });
+      ctx.fillStyle = '#fb7185'; ctx.beginPath(); ctx.ellipse(0, 0, s * .3, s * .2, 0, 0, 6.29); ctx.fill();
+    } else if (kind === 'coral') {
+      ctx.strokeStyle = '#f43f5e'; ctx.lineWidth = s * .09; ctx.beginPath(); ctx.moveTo(0, s * .36); ctx.lineTo(0, -s * .2); ctx.moveTo(0, s * .12); ctx.lineTo(-s * .24, -s * .1); ctx.moveTo(0, s * .02); ctx.lineTo(s * .24, -s * .24); ctx.moveTo(0, -s * .1); ctx.lineTo(-s * .1, -s * .34); ctx.stroke();
+    } else if (kind === 'plastic_bottle') {
+      ctx.fillStyle = '#93c5fd'; ctx.beginPath(); ctx.roundRect(-s * .13, -s * .22, s * .26, s * .56, s * .05); ctx.fill();
+      ctx.fillStyle = '#e5e7eb'; ctx.fillRect(-s * .06, -s * .36, s * .12, s * .14);
+    } else if (kind === 'octopus') {
+      ctx.strokeStyle = '#c084fc'; ctx.lineWidth = s * .07; for (let i = -2; i <= 2; i++) { ctx.beginPath(); ctx.moveTo(i * s * .1, s * .08); ctx.quadraticCurveTo(i * s * .18, s * .3, i * s * .24 + s * .04, s * .36); ctx.stroke(); }
+      dot(0, -s * .08, s * .24, '#c084fc'); dot(-s * .08, -s * .1, s * .04, '#140a22'); dot(s * .08, -s * .1, s * .04, '#140a22');
+    } else if (kind === 'rock') {
+      ctx.fillStyle = '#78716c'; ctx.beginPath(); ctx.moveTo(-s * .34, s * .22); ctx.lineTo(-s * .2, -s * .12); ctx.lineTo(s * .06, -s * .26); ctx.lineTo(s * .3, -s * .06); ctx.lineTo(s * .36, s * .22); ctx.closePath(); ctx.fill();
+    } else if (kind === 'can') {
+      ctx.fillStyle = '#cbd5e1'; ctx.fillRect(-s * .15, -s * .24, s * .3, s * .5); ctx.fillStyle = '#ef4444'; ctx.fillRect(-s * .15, -s * .06, s * .3, s * .14);
+    }
+    ctx.restore();
+  }
   (function () {
     const box = $('#seaToy'), cv = box.querySelector('canvas'), count = $('#seaCount');
-    const objs = [['🐟', 'fish', .96, .2, .3], ['🐠', 'fish', .93, .72, .22], ['🦀', 'crab', .89, .3, .82], ['🪸', 'coral', .91, .82, .78], ['🧴', 'plastic_bottle', .87, .55, .62, 1], ['🐙', 'octopus', .9, .45, .28], ['🪨', 'rock', .84, .12, .62], ['🥫', 'can', .86, .9, .5, 1], ['🐡', 'pufferfish', .92, .62, .9]];
+    const objs = [['', 'fish', .96, .2, .3], ['', 'fish', .93, .72, .22], ['', 'crab', .89, .3, .82], ['', 'coral', .91, .82, .78], ['', 'plastic_bottle', .87, .55, .62, 1], ['', 'octopus', .9, .45, .28], ['', 'rock', .84, .12, .62], ['', 'can', .86, .9, .5, 1], ['', 'pufferfish', .92, .62, .9]];
     let g, light = { x: .5, y: .5 }, target = { x: .5, y: .5 }, user = 0, seen = new Set();
     const resize = () => g = fit(cv); resize(); new ResizeObserver(() => resize()).observe(cv);
     const move = e => { const r = box.getBoundingClientRect(); target = { x: (e.clientX - r.left) / r.width, y: (e.clientY - r.top) / r.height }; user = performance.now(); };
@@ -1207,7 +1236,7 @@
       const lx = light.x * w, ly = light.y * h, R = Math.min(w, h) * .3;
       ctx.fillStyle = '#140a22'; ctx.fillRect(0, 0, w, h);
       ctx.font = `${Math.round(Math.min(w, h) * .09)}px serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      objs.forEach((o, i) => { ctx.fillText(o[0], o[3] * w + Math.sin(t / 900 + i) * 6, o[4] * h + Math.cos(t / 1300 + i) * 4); });
+      objs.forEach((o, i) => drawObj(ctx, o[1], o[3] * w + Math.sin(t / 900 + i) * 6, o[4] * h + Math.cos(t / 1300 + i) * 4, Math.min(w, h) * .12));
       const dark = ctx.createRadialGradient(lx, ly, R * .25, lx, ly, R * 1.25);
       dark.addColorStop(0, 'rgba(8,4,16,0)'); dark.addColorStop(.6, 'rgba(8,4,16,.55)'); dark.addColorStop(1, 'rgba(8,4,16,.97)');
       ctx.fillStyle = dark; ctx.fillRect(0, 0, w, h);
@@ -1371,7 +1400,7 @@
       const paint = () => { const now = ['free', 'booked', 'ending'].find(c => b.classList.contains(c)); b.innerHTML = `<span class="st">${label(now)}</span><span><b>${n()}</b><br><small>${T(...cp)}</small></span>`; };
       paint(); addEventListener('langchange', paint);
       b.addEventListener('click', () => {
-        if (b.classList.contains('free')) { b.classList.replace('free', 'booked'); paint(); say(T(`✓ ${n()} booked · 10:00 – 12:00`, `✓ تم حجز ${n()} · 10:00 – 12:00`)); tone(784, .1); tone(1047, .15, 'sine', .06, .08); }
+        if (b.classList.contains('free')) { b.classList.replace('free', 'booked'); paint(); say(T(`${n()} booked · 10:00 – 12:00`, `تم حجز ${n()} · 10:00 – 12:00`)); tone(784, .1); tone(1047, .15, 'sine', .06, .08); }
         else say(b.classList.contains('ending') ? T(`${n()} frees up in 30 minutes`, `${n()} تتاح بعد 30 دقيقة`) : T(`${n()} is already booked`, `${n()} محجوزة مسبقاً`));
       });
       floor.appendChild(b);
@@ -1490,7 +1519,7 @@
     const upd = () => {
       const z = [...box.querySelectorAll('input:checked')].reduce((a, i) => a + +i.dataset.w, B0), p = 1 / (1 + Math.exp(-z));
       $('#riskPct').textContent = Math.round(p * 100) + '%'; $('#riskBar').style.width = Math.max(4, p * 100) + '%';
-      $('#verdict').textContent = p > .6 ? T('flag for HR, likely to leave', 'نبّهوا الموارد البشرية, غالباً سيغادر') : p > .3 ? T('worth a check-in', 'يستحق جلسة متابعة') : T('probably staying ♡', 'غالباً باقٍ ♡');
+      $('#verdict').textContent = p > .6 ? T('flag for HR, likely to leave', 'نبّهوا الموارد البشرية, غالباً سيغادر') : p > .3 ? T('worth a check-in', 'يستحق جلسة متابعة') : T('probably staying', 'غالباً باقٍ');
     };
     box.addEventListener('change', () => { upd(); tone(600 + Math.random() * 300, .06, 'sine', .04); }); upd();
   })();
@@ -1570,7 +1599,7 @@
   // ---------- Rock Paper Scissors Lizard Spock ----------
   (function () {
     const beats = { scissors: { paper: 'cuts', lizard: 'decapitates' }, paper: { rock: 'covers', spock: 'disproves' }, rock: { lizard: 'crushes', scissors: 'crushes' }, lizard: { spock: 'poisons', paper: 'eats' }, spock: { scissors: 'smashes', rock: 'vaporizes' } };
-    const icon = { rock: '✊', paper: '✋', scissors: '✌️', lizard: '🦎', spock: '🖖' }, cap = s => s[0].toUpperCase() + s.slice(1);
+    const icon = { rock: 1, paper: 1, scissors: 1, lizard: 1, spock: 1 }, cap = s => s[0].toUpperCase() + s.slice(1);
     const ARN = { rock: 'الحجر', paper: 'الورقة', scissors: 'المقص', lizard: 'السحلية', spock: 'سبوك' };
     const ARV = { cuts: 'يقص', decapitates: 'يقطع رأس', covers: 'تغطي', disproves: 'تدحض', crushes: 'يسحق', poisons: 'تسمّم', eats: 'تأكل', smashes: 'يحطّم', vaporizes: 'يبخّر' };
     const say = (x, v, y) => T(`${cap(x)} ${v} ${y}.`, `${ARN[x]} ${ARV[v]} ${ARN[y]}.`);
@@ -1582,7 +1611,7 @@
       if (a === c) { head = T('Tie. Again?', 'تعادل. مرة ثانية؟'); rule = T(`We both picked ${a}.`, `اخترنا كلانا ${ARN[a]}.`); tone(500, .12); }
       else if (beats[a][c]) { you++; head = T('You win! Bazinga?', 'فزت! بازينقا؟'); rule = say(a, beats[a][c], c); tone(784, .1); tone(1047, .15, 'sine', .07, .1); }
       else { me++; head = T('I win. Bazinga!', 'فزت أنا. بازينقا!'); rule = say(c, beats[c][a], a); tone(330, .2, 'triangle'); }
-      $('#rpsOut').innerHTML = `<b>${icon[a]} vs ${icon[c]}, ${head}</b>${rule}<br>${T('You', 'أنت')}: ${you} · ${T('Me', 'أنا')}: ${me}`;
+      $('#rpsOut').innerHTML = `<b>${T(cap(a), ARN[a])} vs ${T(cap(c), ARN[c])}, ${head}</b>${rule}<br>${T('You', 'أنت')}: ${you} · ${T('Me', 'أنا')}: ${me}`;
     });
   })();
 
@@ -1685,7 +1714,7 @@
   })();
 
   // ---------- contact ----------
-  $('#copy').addEventListener('click', e => { navigator.clipboard && navigator.clipboard.writeText('hana3hjs@gmail.com'); e.target.textContent = T('Copied ✓', 'تم النسخ ✓'); tone(1047, .12); setTimeout(() => e.target.textContent = T('Copy', 'نسخ'), 1800); });
+  $('#copy').addEventListener('click', e => { navigator.clipboard && navigator.clipboard.writeText('hana3hjs@gmail.com'); e.target.textContent = T('Copied', 'تم النسخ'); tone(1047, .12); setTimeout(() => e.target.textContent = T('Copy', 'نسخ'), 1800); });
 
   // ---------- lightbox for the press page and the real YOLO video ----------
   (function () {
