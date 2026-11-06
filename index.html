@@ -1059,8 +1059,9 @@
           <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="1" data-ar="&lt;small&gt;NVIDIA&lt;/small&gt;معرفة جديدة"><small>NVIDIA</small>new knowledge</button>
           <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="2" data-ar="&lt;small&gt;NVIDIA&lt;/small&gt;تطبيقات سريعة"><small>NVIDIA</small>rapid apps</button>
           <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="3" data-ar="&lt;small&gt;سدايا&lt;/small&gt;هندسة بيانات"><small>SDAIA</small>data eng.</button>
-          <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="4" data-ar="&lt;small&gt;طويق&lt;/small&gt;تحليل بـ R"><small>Tuwaiq</small>R analysis</button>
-          <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="5" data-ar="&lt;small&gt;ISC2 · IBM&lt;/small&gt;أمن سيبراني"><small>ISC2 · IBM</small>security</button>
+          <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="4" data-ar="&lt;small&gt;سدايا&lt;/small&gt;تعلّم الآلة"><small>SDAIA</small>ML basics</button>
+          <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="5" data-ar="&lt;small&gt;طويق&lt;/small&gt;تحليل بـ R"><small>Tuwaiq</small>R analysis</button>
+          <button class="cf-tab" type="button" role="tab" aria-selected="false" aria-controls="cfDoc" data-i="6" data-ar="&lt;small&gt;ISC2 · IBM&lt;/small&gt;أمن سيبراني"><small>ISC2 · IBM</small>security</button>
         </div>
         <div class="cf-body">
           <div class="cf-back"></div>
@@ -1071,7 +1072,7 @@
             <span class="cf-d" id="cfD"></span>
             <svg class="cf-seal" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="35" stroke-dasharray="3 4"/><text x="50" y="58" text-anchor="middle" id="cfAb">NV</text></svg>
           </article>
-          <div class="cf-front"><span class="cf-label" data-ar="هناء الشمراني · الشهادات">Hana Al-Shamrani · certificates</span><a class="cf-dl" id="cfDl" target="_blank" rel="noopener"></a><span class="cf-count" data-ar="6 والعدد مستمر">6 &amp; counting</span></div>
+          <div class="cf-front"><span class="cf-label" data-ar="هناء الشمراني · الشهادات">Hana Al-Shamrani · certificates</span><a class="cf-dl" id="cfDl" target="_blank" rel="noopener"></a><span class="cf-count" data-ar="7 والعدد مستمر">7 &amp; counting</span></div>
         </div>
       </div>
     </div>
@@ -1695,6 +1696,7 @@
       ['NVIDIA · Deep Learning Institute', "Adding New Knowledge to LLMs", 'Fine-tuning · Vector databases · Prompt engineering · RAG', 'Sep 2026', 'NV', 'assets/certs/nvidia-adding-new-knowledge-to-llms.pdf'],
       ['NVIDIA · Deep Learning Institute', "Rapid Application Development with LLMs", 'Generative AI · LangChain · NLP · Python', 'Sep 2026', 'NV', null],
       ['SDAIA Academy', "Modern Data Engineering for AI Systems", 'Kafka · Lakehouse · Data pipelines · Data quality', 'Sep 2026', 'SD', 'assets/certs/sdaia-modern-data-engineering.pdf'],
+      ['SDAIA Academy', "Machine Learning Fundamentals", 'Applied ML · Baselines · Data leakage · Model evaluation', 'Oct 2026', 'SD', null, 'https://athkax.sdaia.gov.sa/certificate-verification?type=Event&id=718&certificate=SA26-00208'],
       ['Tuwaiq Academy', "Data Analysis Using R Programming", 'R · Statistics · Data cleaning · Visualization', 'Oct 2026', 'TW', null],
       ['ISC2 · IBM · UC Davis', "Cybersecurity & Secure Coding", 'Security fundamentals · Secure coding', '', 'SC', null]
     ];
@@ -1702,8 +1704,9 @@
     let cur = 0, timer = 0;
     const LI = 'https://www.linkedin.com/in/hana-alshamrani-855946228/details/certifications/';
     const setDl = i => {
-      const a = $('#cfDl'), f = CERTS[i][5];
+      const a = $('#cfDl'), f = CERTS[i][5], v = CERTS[i][6];
       if (f) { a.href = f; a.setAttribute('download', ''); a.textContent = T('Download PDF \u2193', '\u062a\u062d\u0645\u064a\u0644 PDF \u2193'); }
+      else if (v) { a.href = v; a.removeAttribute('download'); a.textContent = T('Verify certificate \u2197', '\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0634\u0647\u0627\u062f\u0629 \u2197'); }
       else { a.href = LI; a.removeAttribute('download'); a.textContent = T('View on LinkedIn \u2197', '\u0639\u0631\u0636\u0647\u0627 \u0641\u064a \u0644\u064a\u0646\u0643\u062f\u0625\u0646 \u2197'); }
     };
     addEventListener('langchange', () => setDl(cur));
